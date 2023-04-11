@@ -22,22 +22,22 @@ public class Fowardtest : MonoBehaviour
         targetRotation = transform.rotation; // Initialize the target rotation to the current rotation of the car
     }
 
-    public void OnTriggerEnter(Collider other)
-    {
+   // public void OnTriggerEnter(Collider other)
+  //  {
         // If the trigger is hit by another object
-        if (other.CompareTag("RightTrigger"))
-        {
-            Debug.Log("I COLLIDE R");
+   //     if (other.CompareTag("RightTrigger"))
+   //     {
+     //       Debug.Log("I COLLIDE R");
             // Add a force to the object to make it move to the right
-            rb.AddForce(Vector3.left * forceAmount, forceMode);
-        }
-        else if (other.CompareTag("LeftTrigger"))
-        {
-            Debug.Log("I COLLIDE L");
+    //        rb.AddForce(Vector3.left * forceAmount, forceMode);
+     //   }
+     //   else if (other.CompareTag("LeftTrigger"))
+     //   {
+      //      Debug.Log("I COLLIDE L");
             // Add a force to the object to make it move to the right
-            rb.AddForce(Vector3.right * forceAmount, forceMode);
-        }
-    }
+    //        rb.AddForce(Vector3.right * forceAmount, forceMode);
+    //    }
+ //   }
 
     void Update()
     {
