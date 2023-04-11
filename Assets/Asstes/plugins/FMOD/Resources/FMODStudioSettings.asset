@@ -216,9 +216,9 @@ MonoBehaviour:
   switchSettingsMigration: 1
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: Assets/audio/FMOD Studio SCP-8991 Project/FMOD Studio SCP-8991
-    Project.fspro
-  sourceBankPath: Assets/audio/FMOD Studio SCP-8991 Project/Build
+  sourceProjectPath: Assets/Asstes/audio/FMOD Studio SCP-8991 Project/FMOD Studio
+    SCP-8991 Project.fspro
+  sourceBankPath: Assets/Asstes/audio/FMOD Studio SCP-8991 Project/Build
   sourceBankPathUnformatted: 
   BankRefreshCooldown: 5
   ShowBankRefreshWindow: 1
