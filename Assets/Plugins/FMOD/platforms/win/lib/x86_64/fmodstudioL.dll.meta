@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 7b1a5b0e7617bcf49885fb2dd09d7085
+guid: c0fc2e64e68ffbc41bd91026c80281f9
 PluginImporter:
   externalObjects: {}
   serializedVersion: 2
@@ -12,12 +12,6 @@ PluginImporter:
   validateReferences: 1
   platformData:
   - first:
-      Android: Android
-    second:
-      enabled: 1
-      settings:
-        CPU: x86_64
-  - first:
       Any: 
     second:
       enabled: 0
@@ -25,9 +19,15 @@ PluginImporter:
   - first:
       Editor: Editor
     second:
-      enabled: 0
+      enabled: 1
       settings:
-        DefaultValueInitialized: true
+        CPU: x86_64
+        OS: Windows
+  - first:
+      Standalone: Win64
+    second:
+      enabled: 1
+      settings: {}
   userData: 
   assetBundleName: 
   assetBundleVariant: 
