@@ -177,15 +177,14 @@ public class RadioController : FiniteStateMachine
             //reset event playback to beginning here if necessary
             Debug.Log("playing event");
             eventEmitter.Play();
-            float lengthInSeconds = 0;
-            eventEmitter.EventDescription.getLength(out int lengthInMS);
+            float lengthInSeconds = 0;eventEmitter.EventDescription.getLength(out int lengthInMS);
             Debug.Log(lengthInMS);
             lengthInSeconds = lengthInMS / 1000f;
             Debug.Log(lengthInSeconds);
             yield return new WaitForSeconds(lengthInSeconds);
             eventEmitter.Stop(); //added by nick
             Debug.Log("waiting over");
-            //reset emitter event to null here?
+            //reset emitter event to null here?*/
         }
         Debug.Log(CurrentState);
         SetState(stations[index]);
