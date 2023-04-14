@@ -303,7 +303,7 @@ public class RadioController : FiniteStateMachine
         /// </summary>
         public void Update()
         {
-            if(instance.eventEmitter.IsPlaying() == false) //if the current track has finished playing
+            if(instance.eventEmitter.IsPlaying() == false && setClipRoutine == null) //if the current track has finished playing
             {
                 if (currentTrackIndex + 1 < clipQueue.Length) //if the next index is within bounds of array
                 {
@@ -348,16 +348,16 @@ public class RadioController : FiniteStateMachine
         /// <param name="index">The index of the clip to play.</param>
         /// <param name="time">The time to start playing the clip from.</param>
         /// <param name="delay">The delay in seconds before playing the clip.</param>
-        private void SetClip(int index, double time, double delay = 0.1d)
+        private void SetClip(int index, double time, double delay = 0d)
         {
             if (index >= 0 && index < clipQueue.Length)
             {
                 currentTrackIndex = index;
                 CurrentTrack = clipQueue[currentTrackIndex];
                 instance.eventEmitter.EventReference = CurrentTrack; //create new instance of new track before its used??
-                instance.eventEmitter.EventInstance.setTimelinePosition((int)((time + delay) * 1000));
+                instance.eventEmitter.EventInstance.setTimelinePosition((int)((time + delay) / 1000));
                 if(setClipRoutine != null) { instance.StopCoroutine(setClipRoutine); }
-                setClipRoutine = instance.StartCoroutine(PlayEmitterAfterDelay((int)((time + delay) * 1000)));
+                setClipRoutine = instance.StartCoroutine(PlayEmitterAfterDelay((int)((time + delay) / 1000)));
                 if (debugPlaybackTimes == true)
                 {
                     Debug.Log($"[{name.ToUpper()}] Clip {currentTrackIndex} scheduled to play at time: {(float)(time + delay)}");
@@ -393,8 +393,8 @@ public class RadioController : FiniteStateMachine
 
         public double GetTrackDuration()
         {
-            instance.eventEmitter.EventInstance.getTimelinePosition(out int timeLinePos); //Get duration of last played track
-            return (double)timeLinePos * 1000;
+            instance.eventEmitter.EventDescription.getLength(out int duration); //Get duration of last played track
+            return (double)duration * 1000;
         }
     }
 }
