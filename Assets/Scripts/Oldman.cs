@@ -4,15 +4,27 @@ using UnityEngine;
 
 public class Oldman : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public GameObject player;
+    public float speed = 5f;
+    private float timer = 0f;
+
+    private void Update()
     {
-        
+        Vector3 direction = Vector3.Normalize(player.transform.position - transform.position);
+        transform.Translate(direction * speed * Time.deltaTime);
+
+        timer += Time.deltaTime;
+        if (timer >= 10f)
+        {
+            Destroy(gameObject);
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnCollisionEnter(Collision collision)
     {
-        
+        if (collision.gameObject == player)
+        {
+            Destroy(gameObject);
+        }
     }
 }

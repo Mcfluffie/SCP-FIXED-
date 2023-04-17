@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.XR.Interaction.Toolkit;
 
-public class SteeringWheel : XRBaseInteractable
+public class Steeringwheel : XRBaseInteractable
 {
     [SerializeField] private Transform wheelTransform;
 
