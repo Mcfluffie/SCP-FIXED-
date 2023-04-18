@@ -4,9 +4,6 @@
     "m_ObjectId": "003bf778cc6943df890dd575b3564b35",
     "m_Properties": [
         {
-            "m_Id": "5684a465f4044f92962f1018a7b7e049"
-        },
-        {
             "m_Id": "39fef40ce2094c07b9b95173a0a9de82"
         },
         {
@@ -1435,7 +1432,7 @@
     "overrideHLSLDeclaration": false,
     "hlslDeclarationOverride": 0,
     "m_Hidden": false,
-    "m_Value": 0.0,
+    "m_Value": 1.0,
     "m_FloatType": 1,
     "m_RangeValues": {
         "x": 0.0,
@@ -1651,34 +1648,6 @@
     "m_Value": 0.0,
     "m_DefaultValue": 1.0,
     "m_Labels": []
-}
-
-{
-    "m_SGVersion": 1,
-    "m_Type": "UnityEditor.ShaderGraph.Internal.Vector1ShaderProperty",
-    "m_ObjectId": "5684a465f4044f92962f1018a7b7e049",
-    "m_Guid": {
-        "m_GuidSerialized": "54fdcc9f-bca4-4012-8134-64aaeba66c2f"
-    },
-    "m_Name": "TextureSaturation",
-    "m_DefaultRefNameVersion": 1,
-    "m_RefNameGeneratedByDisplayName": "TextureSaturation",
-    "m_DefaultReferenceName": "_TextureSaturation",
-    "m_OverrideReferenceName": "",
-    "m_GeneratePropertyBlock": true,
-    "m_UseCustomSlotLabel": false,
-    "m_CustomSlotLabel": "",
-    "m_DismissedVersion": 0,
-    "m_Precision": 0,
-    "overrideHLSLDeclaration": false,
-    "hlslDeclarationOverride": 0,
-    "m_Hidden": false,
-    "m_Value": 0.05999999865889549,
-    "m_FloatType": 1,
-    "m_RangeValues": {
-        "x": 0.0,
-        "y": 1.0
-    }
 }
 
 {
@@ -2223,9 +2192,6 @@
     "m_ObjectId": "721af16a4ad94ab2b81482b19c851810",
     "m_Name": "",
     "m_ChildObjectList": [
-        {
-            "m_Id": "5684a465f4044f92962f1018a7b7e049"
-        },
         {
             "m_Id": "39fef40ce2094c07b9b95173a0a9de82"
         },

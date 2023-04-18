@@ -20,7 +20,8 @@ public class ChangeVignette : MonoBehaviour
     public bool sanityDepreciating;
     public float vignetteLerpTime;
     public AnimationCurve curve;
-    
+
+    public Material road;
 
     public float sanityTimer;
 
@@ -48,6 +49,7 @@ public class ChangeVignette : MonoBehaviour
     void Update()
     {
 
+        
 
         // create a list of input devices and find the one with specific characteristics 
         List<InputDevice> devices = new List<InputDevice>();
