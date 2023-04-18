@@ -21,8 +21,6 @@ public class ChangeVignette : MonoBehaviour
     public float vignetteLerpTime;
     public AnimationCurve curve;
 
-    public Material road;
-
     public float sanityTimer;
 
     [SerializeField]
