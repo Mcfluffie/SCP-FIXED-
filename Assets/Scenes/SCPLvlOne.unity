@@ -2212,6 +2212,21 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a9f771743449c524e893f1ccbd5822cb, type: 3}
+--- !u!1 &157668627 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2792490150366239873, guid: a9f771743449c524e893f1ccbd5822cb, type: 3}
+  m_PrefabInstance: {fileID: 157668626}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &157668628 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3432193139976781215, guid: a9f771743449c524e893f1ccbd5822cb, type: 3}
+  m_PrefabInstance: {fileID: 157668626}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &157668629 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3433877513031982670, guid: a9f771743449c524e893f1ccbd5822cb, type: 3}
+  m_PrefabInstance: {fileID: 157668626}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &161447659
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24341,7 +24356,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   globalVolume: {fileID: 970030739}
-  strength: 0.944
+  strength: 0.5
   saturation: 30
   vignetteLerpTime: 6
   curve:
@@ -38369,18 +38384,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectScaresArray:
-  - objectInGame: {fileID: 0}
+  - objectInGame: {fileID: 157668629}
+    isAvailable: 1
+    isActive: 0
+    scareValue: 3
+  - objectInGame: {fileID: 157668628}
+    isAvailable: 1
+    isActive: 0
+    scareValue: 3
+  - objectInGame: {fileID: 157668627}
     isAvailable: 0
     isActive: 0
-    scareValue: 0
-  - objectInGame: {fileID: 0}
-    isAvailable: 0
-    isActive: 0
-    scareValue: 0
-  - objectInGame: {fileID: 0}
-    isAvailable: 0
-    isActive: 0
-    scareValue: 0
+    scareValue: 3
   vignetteChange: {fileID: 970030738}
   numScaresOn: 0
   timeBetweenScares: 3
