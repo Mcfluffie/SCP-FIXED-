@@ -43,10 +43,10 @@ MonoBehaviour:
     SCP-8991 Project/Build/Desktop/ghosts.bank
   Name: ghosts
   StudioPath: bank:/ghosts
-  lastModified: 638162093096495288
+  lastModified: 638174443855971389
   FileSizes:
   - Name: Desktop
-    Value: 28000
+    Value: 27552
   Exists: 1
 --- !u!114 &-8240120614592329969
 MonoBehaviour:
@@ -64,7 +64,7 @@ MonoBehaviour:
     SCP-8991 Project/Build/Desktop/hud.bank
   Name: hud
   StudioPath: bank:/hud
-  lastModified: 638162093096515307
+  lastModified: 638174443855971389
   FileSizes:
   - Name: Desktop
     Value: 2494
@@ -221,7 +221,7 @@ MonoBehaviour:
     SCP-8991 Project/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638162093096365167
+  lastModified: 638174443855841824
   FileSizes:
   - Name: Desktop
     Value: 2010
@@ -242,7 +242,7 @@ MonoBehaviour:
     SCP-8991 Project/Build/Desktop/ui.bank
   Name: ui
   StudioPath: bank:/ui
-  lastModified: 638162093096555347
+  lastModified: 638174443855991324
   FileSizes:
   - Name: Desktop
     Value: 2494
@@ -431,7 +431,7 @@ MonoBehaviour:
   - {fileID: 2919078839961610649}
   StringsBanks:
   - {fileID: -3057576187251575024}
-  cacheTime: 638162093096555347
+  cacheTime: 638174443855991324
   cacheVersion: 131601
 --- !u!114 &124277663440773101
 MonoBehaviour:
@@ -530,10 +530,10 @@ MonoBehaviour:
     SCP-8991 Project/Build/Desktop/car.bank
   Name: car
   StudioPath: bank:/car
-  lastModified: 638162093096465260
+  lastModified: 638174443855961423
   FileSizes:
   - Name: Desktop
-    Value: 477696
+    Value: 476704
   Exists: 1
 --- !u!114 &2919078839961610649
 MonoBehaviour:
@@ -551,7 +551,7 @@ MonoBehaviour:
     SCP-8991 Project/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638162093096355158
+  lastModified: 638174443855841824
   FileSizes:
   - Name: Desktop
     Value: 1178
@@ -653,10 +653,10 @@ MonoBehaviour:
     SCP-8991 Project/Build/Desktop/radio.bank
   Name: radio
   StudioPath: bank:/radio
-  lastModified: 638162093096535330
+  lastModified: 638174443855991324
   FileSizes:
   - Name: Desktop
-    Value: 242688
+    Value: 242240
   Exists: 1
 --- !u!114 &5625269749634782179
 MonoBehaviour:
@@ -782,10 +782,10 @@ MonoBehaviour:
     SCP-8991 Project/Build/Desktop/ambience.bank
   Name: ambience
   StudioPath: bank:/ambience
-  lastModified: 638162093096435234
+  lastModified: 638174443855921570
   FileSizes:
   - Name: Desktop
-    Value: 1857536
+    Value: 1857248
   Exists: 1
 --- !u!114 &8176823923329987712
 MonoBehaviour:

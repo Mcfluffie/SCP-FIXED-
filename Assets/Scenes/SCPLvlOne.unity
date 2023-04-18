@@ -24341,9 +24341,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   globalVolume: {fileID: 970030739}
-  strength: 0.518
+  strength: 0.944
   saturation: 30
-  sanityDepreciating: 0
   vignetteLerpTime: 6
   curve:
     serializedVersion: 2
@@ -24372,6 +24371,7 @@ MonoBehaviour:
   sanityTimer: 0
   sanityTimeOut: 4
   sanityLevel: 0
+  isScareClassInUse: {fileID: 1343848382}
   timeToHeal: 10
 --- !u!114 &970030739
 MonoBehaviour:
@@ -38369,15 +38369,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectScaresArray:
-  - value1: {fileID: 0}
+  - objectInGame: {fileID: 0}
+    isAvailable: 0
     isActive: 0
-  - value1: {fileID: 0}
+    scareValue: 0
+  - objectInGame: {fileID: 0}
+    isAvailable: 0
     isActive: 0
-  - value1: {fileID: 0}
+    scareValue: 0
+  - objectInGame: {fileID: 0}
+    isAvailable: 0
     isActive: 0
+    scareValue: 0
   vignetteChange: {fileID: 970030738}
-  scareValue: 3
+  numScaresOn: 0
   timeBetweenScares: 3
+  pickScare: {fileID: 0}
+  foundScare: {fileID: 0}
 --- !u!4 &1343848383
 Transform:
   m_ObjectHideFlags: 0
