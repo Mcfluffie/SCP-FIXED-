@@ -43,7 +43,7 @@ MonoBehaviour:
     SCP-8991 Project/Build/Desktop/ghosts.bank
   Name: ghosts
   StudioPath: bank:/ghosts
-  lastModified: 638161132045762285
+  lastModified: 638162093096495288
   FileSizes:
   - Name: Desktop
     Value: 28000
@@ -64,11 +64,38 @@ MonoBehaviour:
     SCP-8991 Project/Build/Desktop/hud.bank
   Name: hud
   StudioPath: bank:/hud
-  lastModified: 638149492674251307
+  lastModified: 638162093096515307
   FileSizes:
   - Name: Desktop
     Value: 2494
   Exists: 1
+--- !u!114 &-7781083718492799840
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/car/car_engine
+  m_EditorClassIdentifier: 
+  Path: event:/car/car_engine
+  Guid:
+    Data1: -1646419651
+    Data2: 1101303327
+    Data3: -1770668927
+    Data4: -440538852
+  Banks:
+  - {fileID: 1127247027876014284}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 32500
 --- !u!114 &-7024485956625352599
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -96,6 +123,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 6126
+--- !u!114 &-5700348658738830038
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/car/car_wipers
+  m_EditorClassIdentifier: 
+  Path: event:/car/car_wipers
+  Guid:
+    Data1: -817360667
+    Data2: 1240239550
+    Data3: -255359831
+    Data4: 1959782486
+  Banks:
+  - {fileID: 1127247027876014284}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 25945
 --- !u!114 &-5665173747412394926
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -143,13 +197,14 @@ MonoBehaviour:
     Data4: -949330152
   Banks:
   - {fileID: 2432320239166324921}
+  - {fileID: -2931654945679492819}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 32500
+  Length: 0
 --- !u!114 &-3057576187251575024
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -166,7 +221,7 @@ MonoBehaviour:
     SCP-8991 Project/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638154982853779766
+  lastModified: 638162093096365167
   FileSizes:
   - Name: Desktop
     Value: 2010
@@ -187,7 +242,7 @@ MonoBehaviour:
     SCP-8991 Project/Build/Desktop/ui.bank
   Name: ui
   StudioPath: bank:/ui
-  lastModified: 638149492675875966
+  lastModified: 638162093096555347
   FileSizes:
   - Name: Desktop
     Value: 2494
@@ -299,7 +354,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 25945
+  Length: 4800
 --- !u!114 &-229597241359257745
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -360,7 +415,6 @@ MonoBehaviour:
   - {fileID: 7145997835230579214}
   - {fileID: -7024485956625352599}
   - {fileID: 8891568064133957138}
-  - {fileID: 7598341479434184426}
   - {fileID: -8902010903967202285}
   - {fileID: 4050972220010704310}
   - {fileID: -2637062475983834941}
@@ -370,13 +424,14 @@ MonoBehaviour:
   - {fileID: 8176823923329987712}
   - {fileID: -229597241359257745}
   - {fileID: -1099660079064745752}
-  - {fileID: 8844213143716546419}
+  - {fileID: -7781083718492799840}
+  - {fileID: -5700348658738830038}
   EditorParameters: []
   MasterBanks:
   - {fileID: 2919078839961610649}
   StringsBanks:
   - {fileID: -3057576187251575024}
-  cacheTime: 638163964697958487
+  cacheTime: 638162093096555347
   cacheVersion: 131601
 --- !u!114 &124277663440773101
 MonoBehaviour:
@@ -475,7 +530,7 @@ MonoBehaviour:
     SCP-8991 Project/Build/Desktop/car.bank
   Name: car
   StudioPath: bank:/car
-  lastModified: 638161132046184200
+  lastModified: 638162093096465260
   FileSizes:
   - Name: Desktop
     Value: 477696
@@ -496,7 +551,7 @@ MonoBehaviour:
     SCP-8991 Project/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638154982853619497
+  lastModified: 638162093096355158
   FileSizes:
   - Name: Desktop
     Value: 1178
@@ -575,13 +630,13 @@ MonoBehaviour:
     Data4: 271652293
   Banks:
   - {fileID: 5167459896295866466}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 0
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 509387
+  Length: 0
 --- !u!114 &5167459896295866466
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -598,10 +653,10 @@ MonoBehaviour:
     SCP-8991 Project/Build/Desktop/radio.bank
   Name: radio
   StudioPath: bank:/radio
-  lastModified: 638163964697958487
+  lastModified: 638162093096535330
   FileSizes:
   - Name: Desktop
-    Value: 16872864
+    Value: 242688
   Exists: 1
 --- !u!114 &5625269749634782179
 MonoBehaviour:
@@ -727,38 +782,11 @@ MonoBehaviour:
     SCP-8991 Project/Build/Desktop/ambience.bank
   Name: ambience
   StudioPath: bank:/ambience
-  lastModified: 638161132046665703
+  lastModified: 638162093096435234
   FileSizes:
   - Name: Desktop
     Value: 1857536
   Exists: 1
---- !u!114 &7598341479434184426
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/car/car_window
-  m_EditorClassIdentifier: 
-  Path: event:/car/car_window
-  Guid:
-    Data1: 1014251719
-    Data2: 1127362493
-    Data3: -128936048
-    Data4: -447426424
-  Banks:
-  - {fileID: 1127247027876014284}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 4800
 --- !u!114 &8176823923329987712
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -779,33 +807,6 @@ MonoBehaviour:
     Data4: 318982967
   Banks:
   - {fileID: 5167459896295866466}
-  IsStream: 1
-  Is3D: 1
-  IsOneShot: 0
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 716562
---- !u!114 &8844213143716546419
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/ui/cursor
-  m_EditorClassIdentifier: 
-  Path: event:/ui/cursor
-  Guid:
-    Data1: 1178297312
-    Data2: 1113854730
-    Data3: -266304875
-    Data4: -949330152
-  Banks:
-  - {fileID: -2931654945679492819}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
