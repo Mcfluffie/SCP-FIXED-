@@ -175,6 +175,7 @@
 		<relationship name="effects">
 			<destination>{22ebdaf8-724a-4bfc-920b-de82bd89fa18}</destination>
 			<destination>{7b564f2e-9991-4de5-ae71-976a0166ac61}</destination>
+			<destination>{eae6eda2-8b30-46fc-83b9-82865429b698}</destination>
 			<destination>{8c6fccf2-09bc-4bc4-a273-39e70879675b}</destination>
 			<destination>{cf926ea5-0a82-4509-be87-2b17c632c7fb}</destination>
 			<destination>{a560f420-7e4d-403b-a9ff-96ee1b32922d}</destination>
@@ -244,7 +245,12 @@
 	</object>
 	<object class="DistortionEffect" id="{7b564f2e-9991-4de5-ae71-976a0166ac61}">
 		<property name="level">
-			<value>0.099999994</value>
+			<value>0.0949999988</value>
+		</property>
+	</object>
+	<object class="FlangerEffect" id="{eae6eda2-8b30-46fc-83b9-82865429b698}">
+		<property name="mix">
+			<value>25</value>
 		</property>
 	</object>
 	<object class="ThreeEQEffect" id="{8c6fccf2-09bc-4bc4-a273-39e70879675b}">
@@ -255,7 +261,7 @@
 			<value>5</value>
 		</property>
 		<property name="highGain">
-			<value>-15</value>
+			<value>-12</value>
 		</property>
 		<property name="lowCrossover">
 			<value>500</value>

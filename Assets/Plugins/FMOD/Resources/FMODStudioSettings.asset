@@ -390,9 +390,8 @@ MonoBehaviour:
   - ambience
   - car
   - ghosts
-  - hud
   - radio
-  - ui
+  - road
   BanksToLoad: []
   LiveUpdatePort: 9264
   EnableMemoryTracking: 0
