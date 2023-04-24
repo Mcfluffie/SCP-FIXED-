@@ -11,7 +11,6 @@ public class ClassForScares : MonoBehaviour
     {
         public GameObject objectInGame;
         public bool isAvailable;
-        public bool isActive;
         public float scareValue;
     }
 
@@ -102,7 +101,7 @@ public class ClassForScares : MonoBehaviour
         for (int i = 0; i < objectScaresArray.Length - 1f; i++)
         {
             Debug.Log("for loop");
-            if (!objectScaresArray[i].isActive && objectScaresArray[i].isAvailable)
+            if (!objectScaresArray[i].objectInGame.activeSelf && objectScaresArray[i].isAvailable)
             {
                 Debug.Log("found the right object");
                 scareNum = i;
