@@ -42,10 +42,10 @@ MonoBehaviour:
   Path: Assets/audio/FMOD Studio SCP-8991 Project/Build/Desktop/radio.bank
   Name: radio
   StudioPath: bank:/radio
-  lastModified: 638178982693730662
+  lastModified: 638179452713131901
   FileSizes:
   - Name: Desktop
-    Value: 46632608
+    Value: 54637312
   Exists: 1
 --- !u!114 &-8311044626406459168
 MonoBehaviour:
@@ -62,7 +62,7 @@ MonoBehaviour:
   Path: Assets/audio/FMOD Studio SCP-8991 Project/Build/Desktop/ui.bank
   Name: ui
   StudioPath: bank:/ui
-  lastModified: 638178982694127241
+  lastModified: 638179452713510204
   FileSizes:
   - Name: Desktop
     Value: 46496
@@ -109,7 +109,7 @@ MonoBehaviour:
   Path: Assets/audio/FMOD Studio SCP-8991 Project/Build/Desktop/ambience.bank
   Name: ambience
   StudioPath: bank:/ambience
-  lastModified: 638178982690889184
+  lastModified: 638179452709683940
   FileSizes:
   - Name: Desktop
     Value: 5707296
@@ -290,10 +290,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/radio/stations/station_3
   Guid:
-    Data1: -1485382311
-    Data2: 1141403692
-    Data3: -2125631090
-    Data4: 2009103724
+    Data1: 744761600
+    Data2: 1176080827
+    Data3: -1840211293
+    Data4: -15283077
   Banks:
   - {fileID: -9112153613886482973}
   IsStream: 1
@@ -302,7 +302,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 850848
+  Length: 373584
 --- !u!114 &-2729089026712800206
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -318,7 +318,7 @@ MonoBehaviour:
   Path: Assets/audio/FMOD Studio SCP-8991 Project/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638178982691483737
+  lastModified: 638179452710294465
   FileSizes:
   - Name: Desktop
     Value: 185432
@@ -338,7 +338,7 @@ MonoBehaviour:
   Path: Assets/audio/FMOD Studio SCP-8991 Project/Build/Desktop/road.bank
   Name: road
   StudioPath: bank:/road
-  lastModified: 638178982693940847
+  lastModified: 638179452713332140
   FileSizes:
   - Name: Desktop
     Value: 873856
@@ -412,7 +412,7 @@ MonoBehaviour:
   Path: Assets/audio/FMOD Studio SCP-8991 Project/Build/Desktop/ghosts.bank
   Name: ghosts
   StudioPath: bank:/ghosts
-  lastModified: 638178982691448701
+  lastModified: 638179452710259440
   FileSizes:
   - Name: Desktop
     Value: 28000
@@ -517,12 +517,14 @@ MonoBehaviour:
   - {fileID: -7525572804048820799}
   - {fileID: -8265678749882870081}
   - {fileID: -4983808507005353164}
+  - {fileID: 5078864457669063864}
+  - {fileID: 6410820270861044552}
   EditorParameters: []
   MasterBanks:
   - {fileID: -2729089026712800206}
   StringsBanks:
   - {fileID: 2699132842776202622}
-  cacheTime: 638178982694127241
+  cacheTime: 638179452713510204
   cacheVersion: 131601
 --- !u!114 &811138096003029933
 MonoBehaviour:
@@ -566,7 +568,7 @@ MonoBehaviour:
   Path: Assets/audio/FMOD Studio SCP-8991 Project/Build/Desktop/car.bank
   Name: car
   StudioPath: bank:/car
-  lastModified: 638178982691268548
+  lastModified: 638179452710069274
   FileSizes:
   - Name: Desktop
     Value: 1799648
@@ -612,10 +614,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: event:/radio/stations/station_5
   Guid:
-    Data1: 751459057
-    Data2: 1320791913
-    Data3: -1312638814
-    Data4: -1541331673
+    Data1: -1634455361
+    Data2: 1229595214
+    Data3: 81697667
+    Data4: -2023885460
   Banks:
   - {fileID: -9112153613886482973}
   IsStream: 1
@@ -624,7 +626,7 @@ MonoBehaviour:
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 415048
+  Length: 410160
 --- !u!114 &2699132842776202622
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -640,10 +642,10 @@ MonoBehaviour:
   Path: Assets/audio/FMOD Studio SCP-8991 Project/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638178982691493747
+  lastModified: 638179452710304472
   FileSizes:
   - Name: Desktop
-    Value: 2036
+    Value: 2100
   Exists: 1
 --- !u!114 &3393366091486735122
 MonoBehaviour:
@@ -726,6 +728,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 4800
+--- !u!114 &5078864457669063864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/radio/stations/station_6
+  m_EditorClassIdentifier: 
+  Path: event:/radio/stations/station_6
+  Guid:
+    Data1: -1485382311
+    Data2: 1141403692
+    Data3: -2125631090
+    Data4: 2009103724
+  Banks:
+  - {fileID: -9112153613886482973}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 850848
 --- !u!114 &5279763865261987168
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -780,6 +809,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2500
+--- !u!114 &6410820270861044552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/radio/stations/station_7
+  m_EditorClassIdentifier: 
+  Path: event:/radio/stations/station_7
+  Guid:
+    Data1: 751459057
+    Data2: 1320791913
+    Data3: -1312638814
+    Data4: -1541331673
+  Banks:
+  - {fileID: -9112153613886482973}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 415048
 --- !u!114 &6541731830255314704
 MonoBehaviour:
   m_ObjectHideFlags: 0

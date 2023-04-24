@@ -240,17 +240,17 @@
 			<value>0.299999982</value>
 		</property>
 		<property name="mix">
-			<value>30</value>
+			<value>35</value>
 		</property>
 	</object>
 	<object class="DistortionEffect" id="{7b564f2e-9991-4de5-ae71-976a0166ac61}">
 		<property name="level">
-			<value>0.0949999988</value>
+			<value>0.144999996</value>
 		</property>
 	</object>
 	<object class="FlangerEffect" id="{eae6eda2-8b30-46fc-83b9-82865429b698}">
 		<property name="mix">
-			<value>25</value>
+			<value>35</value>
 		</property>
 	</object>
 	<object class="ThreeEQEffect" id="{8c6fccf2-09bc-4bc4-a273-39e70879675b}">
