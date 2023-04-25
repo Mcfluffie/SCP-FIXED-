@@ -184,6 +184,12 @@ namespace FMODUnity
 
             cachedParams.Clear();
 
+            if (hasTriggered)
+            {
+                Lookup();
+            }
+
+
             if (!eventDescription.isValid())
             {
                 Lookup();
