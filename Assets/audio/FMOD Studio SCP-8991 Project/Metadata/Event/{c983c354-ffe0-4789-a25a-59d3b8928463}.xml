@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{c983c354-ffe0-4789-a25a-59d3b8928463}">
 		<property name="name">
-			<value>ghost_sighted</value>
+			<value>banshee_sighted</value>
 		</property>
 		<property name="outputFormat">
 			<value>0</value>

@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 997
   m_ShowMode: 4
-  m_Title: Scene
+  m_Title: Hierarchy
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -272,8 +272,8 @@ MonoBehaviour:
     y: 0
     width: 400
     height: 947
-  m_MinSize: {x: 276, y: 71}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 21}
   m_Panes:
   - {fileID: 21}
@@ -610,9 +610,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 90.43232, y: 1.5715096, z: 50.45347}
+    m_Target: {x: 87.13625, y: -0.15614074, z: 50.54318}
     speed: 2
-    m_Value: {x: 90.43232, y: 1.5715096, z: 50.45347}
+    m_Value: {x: 87.13625, y: -0.15614074, z: 50.54318}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -658,13 +658,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.011686568, y: 0.02754717, z: 0.00031772157, w: 0.9995795}
+    m_Target: {x: 0.0048092776, y: -0.0039471057, z: 0.000012989202, w: 1.0000101}
     speed: 2
-    m_Value: {x: -0.013186087, y: 0.02604658, z: 0.0003392577, w: 0.99957377}
+    m_Value: {x: 0.006309101, y: -0.0039469656, z: 0.000018909986, w: 0.99997234}
   m_Size:
     m_Target: 26.17685
     speed: 2
-    m_Value: 25.049616
+    m_Value: 26.17685
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -755,7 +755,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
+    m_EnableMouseInput: 0
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -1047,23 +1047,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 70eeffff
-      m_LastClickedID: -4496
-      m_ExpandedIDs: 9efaffff
+      m_SelectedIDs: beb50000
+      m_LastClickedID: 46526
+      m_ExpandedIDs: e8faffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: rain
-        m_OriginalName: rain
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: -18638
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 0
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 9}
       m_SearchString: 
@@ -1119,23 +1119,23 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/audio/FMOD Prefabs
+    - Assets/Plugins/FMOD/Resources
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/audio/FMOD Prefabs
+  - Assets/Plugins/FMOD/Resources
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\Documents\Audio\GitKraken\SCP-FIXED-
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 2aca0000
-    m_LastClickedID: 51754
-    m_ExpandedIDs: 0000000038c80000f8c9000000ca9a3b
+    scrollPos: {x: 0, y: 190}
+    m_SelectedIDs: 42ca0000
+    m_LastClickedID: 51778
+    m_ExpandedIDs: 0000000038c80000f4c900000aca000044ca000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1190,7 +1190,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c623000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0

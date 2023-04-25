@@ -42,7 +42,7 @@ MonoBehaviour:
   Path: Assets/audio/FMOD Studio SCP-8991 Project/Build/Desktop/radio.bank
   Name: radio
   StudioPath: bank:/radio
-  lastModified: 638179452713131901
+  lastModified: 638180250298089240
   FileSizes:
   - Name: Desktop
     Value: 54637312
@@ -62,7 +62,7 @@ MonoBehaviour:
   Path: Assets/audio/FMOD Studio SCP-8991 Project/Build/Desktop/ui.bank
   Name: ui
   StudioPath: bank:/ui
-  lastModified: 638179452713510204
+  lastModified: 638180250298484546
   FileSizes:
   - Name: Desktop
     Value: 46496
@@ -109,7 +109,7 @@ MonoBehaviour:
   Path: Assets/audio/FMOD Studio SCP-8991 Project/Build/Desktop/ambience.bank
   Name: ambience
   StudioPath: bank:/ambience
-  lastModified: 638179452709683940
+  lastModified: 638180250294596256
   FileSizes:
   - Name: Desktop
     Value: 5707296
@@ -303,6 +303,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 373584
+--- !u!114 &-3813074407167196685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/ghosts/banshee_sighted
+  m_EditorClassIdentifier: 
+  Path: event:/ghosts/banshee_sighted
+  Guid:
+    Data1: -914111660
+    Data2: 1200226272
+    Data3: -749118814
+    Data4: 1669632696
+  Banks:
+  - {fileID: -1844207375133705967}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2500
 --- !u!114 &-2729089026712800206
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -318,7 +345,7 @@ MonoBehaviour:
   Path: Assets/audio/FMOD Studio SCP-8991 Project/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638179452710294465
+  lastModified: 638180250295271822
   FileSizes:
   - Name: Desktop
     Value: 185432
@@ -338,7 +365,7 @@ MonoBehaviour:
   Path: Assets/audio/FMOD Studio SCP-8991 Project/Build/Desktop/road.bank
   Name: road
   StudioPath: bank:/road
-  lastModified: 638179452713332140
+  lastModified: 638180250298304426
   FileSizes:
   - Name: Desktop
     Value: 873856
@@ -412,10 +439,10 @@ MonoBehaviour:
   Path: Assets/audio/FMOD Studio SCP-8991 Project/Build/Desktop/ghosts.bank
   Name: ghosts
   StudioPath: bank:/ghosts
-  lastModified: 638179452710259440
+  lastModified: 638180250295221769
   FileSizes:
   - Name: Desktop
-    Value: 28000
+    Value: 435616
   Exists: 1
 --- !u!114 &-1449862171294448305
 MonoBehaviour:
@@ -497,8 +524,6 @@ MonoBehaviour:
   - {fileID: -2069126488212505685}
   - {fileID: -4308257255642062382}
   - {fileID: 811138096003029933}
-  - {fileID: 6743340327640284500}
-  - {fileID: 5625269749634782179}
   - {fileID: 6541731830255314704}
   - {fileID: 7145997835230579214}
   - {fileID: -7781083718492799840}
@@ -519,12 +544,15 @@ MonoBehaviour:
   - {fileID: -4983808507005353164}
   - {fileID: 5078864457669063864}
   - {fileID: 6410820270861044552}
+  - {fileID: 8694587309914767725}
+  - {fileID: -3813074407167196685}
+  - {fileID: 5045573658606294951}
   EditorParameters: []
   MasterBanks:
   - {fileID: -2729089026712800206}
   StringsBanks:
   - {fileID: 2699132842776202622}
-  cacheTime: 638179452713510204
+  cacheTime: 638180250298484546
   cacheVersion: 131601
 --- !u!114 &811138096003029933
 MonoBehaviour:
@@ -568,7 +596,7 @@ MonoBehaviour:
   Path: Assets/audio/FMOD Studio SCP-8991 Project/Build/Desktop/car.bank
   Name: car
   StudioPath: bank:/car
-  lastModified: 638179452710069274
+  lastModified: 638180250295006590
   FileSizes:
   - Name: Desktop
     Value: 1799648
@@ -642,10 +670,10 @@ MonoBehaviour:
   Path: Assets/audio/FMOD Studio SCP-8991 Project/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638179452710304472
+  lastModified: 638180250295281832
   FileSizes:
   - Name: Desktop
-    Value: 2100
+    Value: 2140
   Exists: 1
 --- !u!114 &3393366091486735122
 MonoBehaviour:
@@ -728,6 +756,33 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 4800
+--- !u!114 &5045573658606294951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/ghosts/banshee_whispers
+  m_EditorClassIdentifier: 
+  Path: event:/ghosts/banshee_whispers
+  Guid:
+    Data1: -325012241
+    Data2: 1158834689
+    Data3: 974380939
+    Data4: -2117119550
+  Banks:
+  - {fileID: -1844207375133705967}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 16600
 --- !u!114 &5078864457669063864
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -782,33 +837,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 483328
---- !u!114 &5625269749634782179
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/ghosts/ghost_sighted
-  m_EditorClassIdentifier: 
-  Path: event:/ghosts/ghost_sighted
-  Guid:
-    Data1: -914111660
-    Data2: 1200226272
-    Data3: -749118814
-    Data4: 1669632696
-  Banks:
-  - {fileID: -1844207375133705967}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 2500
 --- !u!114 &6410820270861044552
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -856,33 +884,6 @@ MonoBehaviour:
     Data4: 856258356
   Banks:
   - {fileID: -9112153613886482973}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1000
---- !u!114 &6743340327640284500
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/ghosts/ghost_vanish
-  m_EditorClassIdentifier: 
-  Path: event:/ghosts/ghost_vanish
-  Guid:
-    Data1: -1660024500
-    Data2: 1283349368
-    Data3: -438616404
-    Data4: 1432924315
-  Banks:
-  - {fileID: -1844207375133705967}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -944,3 +945,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 4411
+--- !u!114 &8694587309914767725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/ghosts/banshee_vanish
+  m_EditorClassIdentifier: 
+  Path: event:/ghosts/banshee_vanish
+  Guid:
+    Data1: -1660024500
+    Data2: 1283349368
+    Data3: -438616404
+    Data4: 1432924315
+  Banks:
+  - {fileID: -1844207375133705967}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1000
