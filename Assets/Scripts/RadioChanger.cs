@@ -7,6 +7,8 @@ public class RadioChanger : MonoBehaviour
 {
 
     public FMODUnity.StudioEventEmitter myEventEmittertoplay;
+    public FMODUnity.StudioEventEmitter HorrorRadio;
+
 
     [SerializeField]
     public FMODUnity.StudioEventEmitter myEventEmittertostop;
@@ -36,6 +38,7 @@ public class RadioChanger : MonoBehaviour
             myEventEmittertostop.Stop();
             myEventEmittertostop2.Stop();
             myEventEmittertostop3.Stop();
+
 
         }
     

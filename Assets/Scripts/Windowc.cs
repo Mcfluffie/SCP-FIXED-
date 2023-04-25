@@ -29,7 +29,7 @@ public class Windowc : MonoBehaviour
         if (other.CompareTag("RadioTrigger"))
         {
             anime.Play("Window");
-            ghosthandAnim.Play("Ghost_Hand_slip");
+            ghosthandAnim.Play("Ghost_Hand_Slip");
             Invoke("DeactivateGhostHand", delay);
         }
     }
