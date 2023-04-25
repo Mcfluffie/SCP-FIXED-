@@ -47,7 +47,7 @@ MonoBehaviour:
   FileSizes:
   - Name: Desktop
     Value: 54637312
-  Exists: 1
+  Exists: 0
 --- !u!114 &-8311044626406459168
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -68,7 +68,7 @@ MonoBehaviour:
   FileSizes:
   - Name: Desktop
     Value: 46496
-  Exists: 1
+  Exists: 0
 --- !u!114 &-8265678749882870081
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -111,7 +111,7 @@ MonoBehaviour:
   Path: Assets/audio/FMOD Studio SCP-8991 Project/Build/Desktop/ambience.bank
   Name: ambience
   StudioPath: bank:/ambience
-  lastModified: 638180250294596256
+  lastModified: 638180620480777157
   FileSizes:
   - Name: Desktop
     Value: 5707296
@@ -292,13 +292,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: ../SCP-I-cant-change-the-radio-while-im-driving/Assets/audio/FMOD Studio
     SCP-8991 Project/Build/Desktop/Master.strings.bank
-  Name: Master.strings
-  StudioPath: bank:/Master.strings
-  lastModified: 638154982853779766
-  FileSizes:
-  - Name: Desktop
-    Value: 2010
-  Exists: 1
+  Guid:
+    Data1: 0
+    Data2: 0
+    Data3: 0
+    Data4: 0
+  Banks: []
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &-2931654945679492819
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -346,7 +352,7 @@ MonoBehaviour:
   FileSizes:
   - Name: Desktop
     Value: 185432
-  Exists: 1
+  Exists: 0
 --- !u!114 &-2334060883048270871
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -366,7 +372,7 @@ MonoBehaviour:
   FileSizes:
   - Name: Desktop
     Value: 873856
-  Exists: 1
+  Exists: 0
 --- !u!114 &-2069126488212505685
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -385,8 +391,7 @@ MonoBehaviour:
     Data2: 1074562047
     Data3: -1932685933
     Data4: -1661636410
-  Banks:
-  - {fileID: -7877504780336614215}
+  Banks: []
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -440,7 +445,7 @@ MonoBehaviour:
   FileSizes:
   - Name: Desktop
     Value: 435616
-  Exists: 1
+  Exists: 0
 --- !u!114 &-1449862171294448305
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -516,6 +521,7 @@ MonoBehaviour:
   - {fileID: -9112153613886482973}
   - {fileID: -2334060883048270871}
   - {fileID: -8311044626406459168}
+  - {fileID: 2821160662562081596}
   EditorEvents:
   - {fileID: 3562169629527867712}
   - {fileID: -2069126488212505685}
@@ -526,7 +532,7 @@ MonoBehaviour:
   - {fileID: -7781083718492799840}
   - {fileID: -5700348658738830038}
   - {fileID: -4330350939095295430}
-  - {fileID: 7862494613357804845}
+  - {fileID: 0}
   - {fileID: 4673053573674383509}
   - {fileID: -9166894611541874360}
   - {fileID: 5279763865261987168}
@@ -549,7 +555,8 @@ MonoBehaviour:
   - {fileID: -2729089026712800206}
   StringsBanks:
   - {fileID: -3057576187251575024}
-  cacheTime: 638163964697958487
+  - {fileID: 2821160662562081596}
+  cacheTime: 638180620483180666
   cacheVersion: 131601
 --- !u!114 &811138096003029933
 MonoBehaviour:
@@ -597,7 +604,7 @@ MonoBehaviour:
   FileSizes:
   - Name: Desktop
     Value: 1799648
-  Exists: 1
+  Exists: 0
 --- !u!114 &1057260542985516910
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -672,6 +679,26 @@ MonoBehaviour:
   FileSizes:
   - Name: Desktop
     Value: 2140
+  Exists: 0
+--- !u!114 &2821160662562081596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/audio/FMOD Studio SCP-8991 Project/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638180620480752138
+  FileSizes:
+  - Name: Desktop
+    Value: 2140
   Exists: 1
 --- !u!114 &3393366091486735122
 MonoBehaviour:
@@ -687,13 +714,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: ../SCP-I-cant-change-the-radio-while-im-driving/Assets/audio/FMOD Studio
     SCP-8991 Project/Build/Desktop/Master.bank
-  Name: Master
-  StudioPath: bank:/Master
-  lastModified: 638154982853619497
-  FileSizes:
-  - Name: Desktop
-    Value: 1178
-  Exists: 1
+  Guid:
+    Data1: 0
+    Data2: 0
+    Data3: 0
+    Data4: 0
+  Banks: []
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &3562169629527867712
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -712,8 +745,7 @@ MonoBehaviour:
     Data2: 1195628983
     Data3: -270104684
     Data4: -1428141791
-  Banks:
-  - {fileID: -7877504780336614215}
+  Banks: []
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -767,7 +799,7 @@ MonoBehaviour:
     Data3: 974380939
     Data4: -2117119550
   Banks:
-  - {fileID: 5167459896295866466}
+  - {fileID: 0}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -789,13 +821,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Path: ../SCP-I-cant-change-the-radio-while-im-driving/Assets/audio/FMOD Studio
     SCP-8991 Project/Build/Desktop/radio.bank
-  Name: radio
-  StudioPath: bank:/radio
-  lastModified: 638163964697958487
-  FileSizes:
-  - Name: Desktop
-    Value: 16872864
-  Exists: 1
+  Guid:
+    Data1: 0
+    Data2: 0
+    Data3: 0
+    Data4: 0
+  Banks: []
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 0
+  MaxDistance: 0
+  Length: 0
 --- !u!114 &5625269749634782179
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -944,7 +982,7 @@ MonoBehaviour:
     Data3: 1392036285
     Data4: -785020452
   Banks:
-  - {fileID: 5167459896295866466}
+  - {fileID: 0}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
