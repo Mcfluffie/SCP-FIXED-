@@ -8,8 +8,8 @@ public class Fowardtest : MonoBehaviour
     public float maxSteeringAngle = 45f; // The maximum angle the wheels can turn
     public float rotationSpeed = 10f; // The speed at which the car rotates
 
-    public float forceAmount = 10f; // The amount of force to add to the object
-    public ForceMode forceMode = ForceMode.Impulse; // The type of force to add
+   // public float forceAmount = 10f; // The amount of force to add to the object
+   // public ForceMode forceMode = ForceMode.Impulse; // The type of force to add
     public Transform steeringWheel; // The transform of the steering wheel object
 
     private Rigidbody rb;
