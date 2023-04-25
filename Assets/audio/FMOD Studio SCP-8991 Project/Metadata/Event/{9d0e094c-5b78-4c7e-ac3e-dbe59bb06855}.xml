@@ -2,7 +2,7 @@
 <objects serializationModel="Studio.02.02.00">
 	<object class="Event" id="{9d0e094c-5b78-4c7e-ac3e-dbe59bb06855}">
 		<property name="name">
-			<value>ghost_vanish</value>
+			<value>banshee_vanish</value>
 		</property>
 		<property name="outputFormat">
 			<value>0</value>

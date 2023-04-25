@@ -360,10 +360,9 @@ MonoBehaviour:
   switchSettingsMigration: 1
   HasSourceProject: 1
   HasPlatforms: 1
-  sourceProjectPath: ../SCP-I-cant-change-the-radio-while-im-driving/Assets/audio/FMOD
-    Studio SCP-8991 Project/FMOD Studio SCP-8991 Project.fspro
-  sourceBankPath: ../SCP-I-cant-change-the-radio-while-im-driving/Assets/audio/FMOD
-    Studio SCP-8991 Project/Build
+  sourceProjectPath: Assets/audio/FMOD Studio SCP-8991 Project/FMOD Studio SCP-8991
+    Project.fspro
+  sourceBankPath: Assets/audio/FMOD Studio SCP-8991 Project/Build
   sourceBankPathUnformatted: 
   BankRefreshCooldown: 5
   ShowBankRefreshWindow: 1
@@ -390,8 +389,8 @@ MonoBehaviour:
   - ambience
   - car
   - ghosts
-  - hud
   - radio
+  - road
   - ui
   BanksToLoad: []
   LiveUpdatePort: 9264

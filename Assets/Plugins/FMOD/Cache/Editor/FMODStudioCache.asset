@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-8902010903967202285
+--- !u!114 &-9166894611541874360
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10,24 +10,91 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/hud/sanity_breathing
+  m_Name: event:/radio/stations/station_2
   m_EditorClassIdentifier: 
-  Path: event:/hud/sanity_breathing
+  Path: event:/radio/stations/station_2
   Guid:
-    Data1: -1489191014
-    Data2: 1213111579
-    Data3: 474039474
-    Data4: -2087507962
+    Data1: 631724299
+    Data2: 1110300999
+    Data3: -671110747
+    Data4: 271652293
   Banks:
-  - {fileID: -8240120614592329969}
+  - {fileID: -9112153613886482973}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 475112
+--- !u!114 &-9112153613886482973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/radio.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/audio/FMOD Studio SCP-8991 Project/Build/Desktop/radio.bank
+  Name: radio
+  StudioPath: bank:/radio
+  lastModified: 638180250298089240
+  FileSizes:
+  - Name: Desktop
+    Value: 54637312
+  Exists: 1
+--- !u!114 &-8311044626406459168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/ui.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/audio/FMOD Studio SCP-8991 Project/Build/Desktop/ui.bank
+  Name: ui
+  StudioPath: bank:/ui
+  lastModified: 638180250298484546
+  FileSizes:
+  - Name: Desktop
+    Value: 46496
+  Exists: 1
+--- !u!114 &-8265678749882870081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/ui/ui_cursor
+  m_EditorClassIdentifier: 
+  Path: event:/ui/ui_cursor
+  Guid:
+    Data1: 5595080
+    Data2: 1308563094
+    Data3: 1047756450
+    Data4: -1946526837
+  Banks:
+  - {fileID: -8311044626406459168}
   IsStream: 0
-  Is3D: 0
+  Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
---- !u!114 &-8831599643956619670
+  Length: 2000
+--- !u!114 &-7877504780336614215
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -37,37 +104,15 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/ghosts.bank
+  m_Name: bank:/ambience.bank
   m_EditorClassIdentifier: 
-  Path: ../SCP-I-cant-change-the-radio-while-im-driving/Assets/audio/FMOD Studio
-    SCP-8991 Project/Build/Desktop/ghosts.bank
-  Name: ghosts
-  StudioPath: bank:/ghosts
-  lastModified: 638162093096495288
+  Path: Assets/audio/FMOD Studio SCP-8991 Project/Build/Desktop/ambience.bank
+  Name: ambience
+  StudioPath: bank:/ambience
+  lastModified: 638180250294596256
   FileSizes:
   - Name: Desktop
-    Value: 28000
-  Exists: 1
---- !u!114 &-8240120614592329969
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/hud.bank
-  m_EditorClassIdentifier: 
-  Path: ../SCP-I-cant-change-the-radio-while-im-driving/Assets/audio/FMOD Studio
-    SCP-8991 Project/Build/Desktop/hud.bank
-  Name: hud
-  StudioPath: bank:/hud
-  lastModified: 638162093096515307
-  FileSizes:
-  - Name: Desktop
-    Value: 2494
+    Value: 5707296
   Exists: 1
 --- !u!114 &-7781083718492799840
 MonoBehaviour:
@@ -88,7 +133,7 @@ MonoBehaviour:
     Data3: -1770668927
     Data4: -440538852
   Banks:
-  - {fileID: 1127247027876014284}
+  - {fileID: 1042357406730204263}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -96,7 +141,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 32500
---- !u!114 &-7024485956625352599
+--- !u!114 &-7525572804048820799
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -106,23 +151,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/car/car_winder/car_winder_down
+  m_Name: event:/ui/ui_select
   m_EditorClassIdentifier: 
-  Path: event:/car/car_winder/car_winder_down
+  Path: event:/ui/ui_select
   Guid:
-    Data1: 746446088
-    Data2: 1222504844
-    Data3: 433875855
-    Data4: -385215830
+    Data1: 423549094
+    Data2: 1301909599
+    Data3: -602520678
+    Data4: -1262865397
   Banks:
-  - {fileID: 1127247027876014284}
+  - {fileID: -8311044626406459168}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 6126
+  Length: 4000
 --- !u!114 &-5700348658738830038
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -142,7 +187,7 @@ MonoBehaviour:
     Data3: -255359831
     Data4: 1959782486
   Banks:
-  - {fileID: 1127247027876014284}
+  - {fileID: 1042357406730204263}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -150,7 +195,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 25945
---- !u!114 &-5665173747412394926
+--- !u!114 &-4983808507005353164
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -160,23 +205,50 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/radio/channel_3
+  m_Name: event:/ui/ui_back
   m_EditorClassIdentifier: 
-  Path: event:/radio/channel_3
+  Path: event:/ui/ui_back
   Guid:
-    Data1: -1485382311
-    Data2: 1141403692
-    Data3: -2125631090
-    Data4: 2009103724
+    Data1: 15909839
+    Data2: 1287815373
+    Data3: 850730131
+    Data4: 1901558830
   Banks:
-  - {fileID: 5167459896295866466}
+  - {fileID: -8311044626406459168}
   IsStream: 0
-  Is3D: 0
+  Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
+  Length: 4000
+--- !u!114 &-4330350939095295430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/car/window/car_window_down
+  m_EditorClassIdentifier: 
+  Path: event:/car/window/car_window_down
+  Guid:
+    Data1: -1719726324
+    Data2: 1110243470
+    Data3: -877907059
+    Data4: 1483008922
+  Banks:
+  - {fileID: 1042357406730204263}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4800
 --- !u!114 &-4308257255642062382
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -197,7 +269,6 @@ MonoBehaviour:
     Data4: -949330152
   Banks:
   - {fileID: 2432320239166324921}
-  - {fileID: -2931654945679492819}
   IsStream: 0
   Is3D: 0
   IsOneShot: 1
@@ -205,49 +276,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &-3057576187251575024
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.strings.bank
-  m_EditorClassIdentifier: 
-  Path: ../SCP-I-cant-change-the-radio-while-im-driving/Assets/audio/FMOD Studio
-    SCP-8991 Project/Build/Desktop/Master.strings.bank
-  Name: Master.strings
-  StudioPath: bank:/Master.strings
-  lastModified: 638162093096365167
-  FileSizes:
-  - Name: Desktop
-    Value: 2010
-  Exists: 1
---- !u!114 &-2931654945679492819
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/ui.bank
-  m_EditorClassIdentifier: 
-  Path: ../SCP-I-cant-change-the-radio-while-im-driving/Assets/audio/FMOD Studio
-    SCP-8991 Project/Build/Desktop/ui.bank
-  Name: ui
-  StudioPath: bank:/ui
-  lastModified: 638162093096555347
-  FileSizes:
-  - Name: Desktop
-    Value: 2494
-  Exists: 1
---- !u!114 &-2637062475983834941
+--- !u!114 &-3951974217059751296
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -257,23 +286,90 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/hud/sanity_whispers
+  m_Name: event:/radio/stations/station_3
   m_EditorClassIdentifier: 
-  Path: event:/hud/sanity_whispers
+  Path: event:/radio/stations/station_3
   Guid:
-    Data1: -1211480340
-    Data2: 1174782799
-    Data3: 153099649
-    Data4: 1815904629
+    Data1: 744761600
+    Data2: 1176080827
+    Data3: -1840211293
+    Data4: -15283077
   Banks:
-  - {fileID: -8240120614592329969}
+  - {fileID: -9112153613886482973}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 373584
+--- !u!114 &-3813074407167196685
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/ghosts/banshee_sighted
+  m_EditorClassIdentifier: 
+  Path: event:/ghosts/banshee_sighted
+  Guid:
+    Data1: -914111660
+    Data2: 1200226272
+    Data3: -749118814
+    Data4: 1669632696
+  Banks:
+  - {fileID: -1844207375133705967}
   IsStream: 0
-  Is3D: 0
+  Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
+  Length: 2500
+--- !u!114 &-2729089026712800206
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/audio/FMOD Studio SCP-8991 Project/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 638180250295271822
+  FileSizes:
+  - Name: Desktop
+    Value: 185432
+  Exists: 1
+--- !u!114 &-2334060883048270871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/road.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/audio/FMOD Studio SCP-8991 Project/Build/Desktop/road.bank
+  Name: road
+  StudioPath: bank:/road
+  lastModified: 638180250298304426
+  FileSizes:
+  - Name: Desktop
+    Value: 873856
+  Exists: 1
 --- !u!114 &-2069126488212505685
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -293,7 +389,7 @@ MonoBehaviour:
     Data3: -1932685933
     Data4: -1661636410
   Banks:
-  - {fileID: 7264045075110611304}
+  - {fileID: -7877504780336614215}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -301,7 +397,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 96024
---- !u!114 &-1099660079064745752
+--- !u!114 &-1978233456688965520
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -311,51 +407,44 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/ui/confirm
+  m_Name: event:/car/car_crash
   m_EditorClassIdentifier: 
-  Path: event:/ui/confirm
+  Path: event:/car/car_crash
   Guid:
-    Data1: 736314848
-    Data2: 1096338601
-    Data3: 1984602503
-    Data4: -834699104
+    Data1: 714710340
+    Data2: 1195921517
+    Data3: -1118124115
+    Data4: -862588945
   Banks:
-  - {fileID: -2931654945679492819}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &-650213484355845658
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/car/car_window
-  m_EditorClassIdentifier: 
-  Path: event:/car/car_window
-  Guid:
-    Data1: 1014251719
-    Data2: 1127362493
-    Data3: -128936048
-    Data4: -447426424
-  Banks:
-  - {fileID: 1127247027876014284}
-  IsStream: 0
+  - {fileID: 1042357406730204263}
+  IsStream: 1
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 4800
---- !u!114 &-229597241359257745
+  Length: 7500
+--- !u!114 &-1844207375133705967
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/ghosts.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/audio/FMOD Studio SCP-8991 Project/Build/Desktop/ghosts.bank
+  Name: ghosts
+  StudioPath: bank:/ghosts
+  lastModified: 638180250295221769
+  FileSizes:
+  - Name: Desktop
+    Value: 435616
+  Exists: 1
+--- !u!114 &-1449862171294448305
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -365,23 +454,50 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/ui/decline
+  m_Name: event:/radio/stations/station_4
   m_EditorClassIdentifier: 
-  Path: event:/ui/decline
+  Path: event:/radio/stations/station_4
   Guid:
-    Data1: 675058831
-    Data2: 1201984736
-    Data3: 522804902
-    Data4: -591960612
+    Data1: -1897424837
+    Data2: 1247342811
+    Data3: -1228646231
+    Data4: -1135279345
   Banks:
-  - {fileID: -2931654945679492819}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
+  - {fileID: -9112153613886482973}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 0
+  Length: 556052
+--- !u!114 &-486869862614769368
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/road/offroad
+  m_EditorClassIdentifier: 
+  Path: event:/road/offroad
+  Guid:
+    Data1: -1110184339
+    Data2: 1247558455
+    Data3: -1814395459
+    Data4: -927215568
+  Banks:
+  - {fileID: -2334060883048270871}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 57580
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -395,71 +511,49 @@ MonoBehaviour:
   m_Name: FMODStudioCache
   m_EditorClassIdentifier: 
   EditorBanks:
-  - {fileID: -3057576187251575024}
-  - {fileID: 7264045075110611304}
-  - {fileID: 1127247027876014284}
-  - {fileID: -8831599643956619670}
-  - {fileID: 2919078839961610649}
-  - {fileID: 5167459896295866466}
-  - {fileID: -8240120614592329969}
-  - {fileID: -2931654945679492819}
+  - {fileID: 2699132842776202622}
+  - {fileID: -7877504780336614215}
+  - {fileID: 1042357406730204263}
+  - {fileID: -1844207375133705967}
+  - {fileID: -2729089026712800206}
+  - {fileID: -9112153613886482973}
+  - {fileID: -2334060883048270871}
+  - {fileID: -8311044626406459168}
   EditorEvents:
   - {fileID: 3562169629527867712}
   - {fileID: -2069126488212505685}
   - {fileID: -4308257255642062382}
-  - {fileID: -650213484355845658}
   - {fileID: 811138096003029933}
-  - {fileID: 6743340327640284500}
-  - {fileID: 5625269749634782179}
   - {fileID: 6541731830255314704}
   - {fileID: 7145997835230579214}
-  - {fileID: -7024485956625352599}
-  - {fileID: 8891568064133957138}
-  - {fileID: -8902010903967202285}
-  - {fileID: 4050972220010704310}
-  - {fileID: -2637062475983834941}
-  - {fileID: 4184657844768814217}
-  - {fileID: 124277663440773101}
-  - {fileID: -5665173747412394926}
-  - {fileID: 8176823923329987712}
-  - {fileID: -229597241359257745}
-  - {fileID: -1099660079064745752}
   - {fileID: -7781083718492799840}
   - {fileID: -5700348658738830038}
+  - {fileID: -4330350939095295430}
+  - {fileID: 7862494613357804845}
+  - {fileID: 4673053573674383509}
+  - {fileID: -9166894611541874360}
+  - {fileID: 5279763865261987168}
+  - {fileID: -1449862171294448305}
+  - {fileID: -3951974217059751296}
+  - {fileID: 3393366091486735122}
+  - {fileID: 2439197374417176640}
+  - {fileID: -486869862614769368}
+  - {fileID: -1978233456688965520}
+  - {fileID: -7525572804048820799}
+  - {fileID: -8265678749882870081}
+  - {fileID: -4983808507005353164}
+  - {fileID: 5078864457669063864}
+  - {fileID: 6410820270861044552}
+  - {fileID: 8694587309914767725}
+  - {fileID: -3813074407167196685}
+  - {fileID: 5045573658606294951}
   EditorParameters: []
   MasterBanks:
-  - {fileID: 2919078839961610649}
+  - {fileID: -2729089026712800206}
   StringsBanks:
-  - {fileID: -3057576187251575024}
-  cacheTime: 638162093096555347
+  - {fileID: 2699132842776202622}
+  cacheTime: 638180250298484546
   cacheVersion: 131601
---- !u!114 &124277663440773101
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/radio/channel_possessed
-  m_EditorClassIdentifier: 
-  Path: event:/radio/channel_possessed
-  Guid:
-    Data1: 2097265703
-    Data2: 1074048670
-    Data3: -494964316
-    Data4: 406977130
-  Banks:
-  - {fileID: 5167459896295866466}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
 --- !u!114 &811138096003029933
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -479,7 +573,7 @@ MonoBehaviour:
     Data3: -1176763970
     Data4: -261554437
   Banks:
-  - {fileID: 1127247027876014284}
+  - {fileID: 1042357406730204263}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -487,6 +581,26 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2000
+--- !u!114 &1042357406730204263
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/car.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/audio/FMOD Studio SCP-8991 Project/Build/Desktop/car.bank
+  Name: car
+  StudioPath: bank:/car
+  lastModified: 638180250295006590
+  FileSizes:
+  - Name: Desktop
+    Value: 1799648
+  Exists: 1
 --- !u!114 &1057260542985516910
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -514,7 +628,34 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &1127247027876014284
+--- !u!114 &2439197374417176640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/radio/stations/station_5
+  m_EditorClassIdentifier: 
+  Path: event:/radio/stations/station_5
+  Guid:
+    Data1: -1634455361
+    Data2: 1229595214
+    Data3: 81697667
+    Data4: -2023885460
+  Banks:
+  - {fileID: -9112153613886482973}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 410160
+--- !u!114 &2699132842776202622
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -524,18 +665,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/car.bank
+  m_Name: bank:/Master.strings.bank
   m_EditorClassIdentifier: 
-  Path: ../SCP-I-cant-change-the-radio-while-im-driving/Assets/audio/FMOD Studio
-    SCP-8991 Project/Build/Desktop/car.bank
-  Name: car
-  StudioPath: bank:/car
-  lastModified: 638162093096465260
+  Path: Assets/audio/FMOD Studio SCP-8991 Project/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638180250295281832
   FileSizes:
   - Name: Desktop
-    Value: 477696
+    Value: 2140
   Exists: 1
---- !u!114 &2919078839961610649
+--- !u!114 &3393366091486735122
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -544,18 +684,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/radio/stations/station_1
   m_EditorClassIdentifier: 
-  Path: ../SCP-I-cant-change-the-radio-while-im-driving/Assets/audio/FMOD Studio
-    SCP-8991 Project/Build/Desktop/Master.bank
-  Name: Master
-  StudioPath: bank:/Master
-  lastModified: 638162093096355158
-  FileSizes:
-  - Name: Desktop
-    Value: 1178
-  Exists: 1
+  Path: event:/radio/stations/station_1
+  Guid:
+    Data1: 1031606946
+    Data2: 1328408375
+    Data3: 1552535982
+    Data4: 318982967
+  Banks:
+  - {fileID: -9112153613886482973}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 532816
 --- !u!114 &3562169629527867712
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -575,15 +721,15 @@ MonoBehaviour:
     Data3: -270104684
     Data4: -1428141791
   Banks:
-  - {fileID: 7264045075110611304}
+  - {fileID: -7877504780336614215}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 25098
---- !u!114 &4050972220010704310
+  Length: 452768
+--- !u!114 &4673053573674383509
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -593,98 +739,131 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/hud/sanity_muffle
+  m_Name: event:/car/window/car_window_up
   m_EditorClassIdentifier: 
-  Path: event:/hud/sanity_muffle
+  Path: event:/car/window/car_window_up
   Guid:
-    Data1: 68857801
-    Data2: 1338857177
-    Data3: 1695723965
-    Data4: 156278640
+    Data1: 1014251719
+    Data2: 1127362493
+    Data3: -128936048
+    Data4: -447426424
   Banks:
-  - {fileID: -8240120614592329969}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &4184657844768814217
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/radio/channel_2
-  m_EditorClassIdentifier: 
-  Path: event:/radio/channel_2
-  Guid:
-    Data1: 631724299
-    Data2: 1110300999
-    Data3: -671110747
-    Data4: 271652293
-  Banks:
-  - {fileID: 5167459896295866466}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &5167459896295866466
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/radio.bank
-  m_EditorClassIdentifier: 
-  Path: ../SCP-I-cant-change-the-radio-while-im-driving/Assets/audio/FMOD Studio
-    SCP-8991 Project/Build/Desktop/radio.bank
-  Name: radio
-  StudioPath: bank:/radio
-  lastModified: 638162093096535330
-  FileSizes:
-  - Name: Desktop
-    Value: 242688
-  Exists: 1
---- !u!114 &5625269749634782179
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/ghosts/ghost_sighted
-  m_EditorClassIdentifier: 
-  Path: event:/ghosts/ghost_sighted
-  Guid:
-    Data1: -914111660
-    Data2: 1200226272
-    Data3: -749118814
-    Data4: 1669632696
-  Banks:
-  - {fileID: -8831599643956619670}
+  - {fileID: 1042357406730204263}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
   Parameters: []
   MinDistance: 1
   MaxDistance: 20
-  Length: 2500
+  Length: 4800
+--- !u!114 &5045573658606294951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/ghosts/banshee_whispers
+  m_EditorClassIdentifier: 
+  Path: event:/ghosts/banshee_whispers
+  Guid:
+    Data1: -325012241
+    Data2: 1158834689
+    Data3: 974380939
+    Data4: -2117119550
+  Banks:
+  - {fileID: -1844207375133705967}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 16600
+--- !u!114 &5078864457669063864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/radio/stations/station_6
+  m_EditorClassIdentifier: 
+  Path: event:/radio/stations/station_6
+  Guid:
+    Data1: -1485382311
+    Data2: 1141403692
+    Data3: -2125631090
+    Data4: 2009103724
+  Banks:
+  - {fileID: -9112153613886482973}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 850848
+--- !u!114 &5279763865261987168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/radio/stations/station_possessed
+  m_EditorClassIdentifier: 
+  Path: event:/radio/stations/station_possessed
+  Guid:
+    Data1: 2097265703
+    Data2: 1074048670
+    Data3: -494964316
+    Data4: 406977130
+  Banks:
+  - {fileID: -9112153613886482973}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 483328
+--- !u!114 &6410820270861044552
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/radio/stations/station_7
+  m_EditorClassIdentifier: 
+  Path: event:/radio/stations/station_7
+  Guid:
+    Data1: 751459057
+    Data2: 1320791913
+    Data3: -1312638814
+    Data4: -1541331673
+  Banks:
+  - {fileID: -9112153613886482973}
+  IsStream: 1
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 415048
 --- !u!114 &6541731830255314704
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -704,34 +883,7 @@ MonoBehaviour:
     Data3: -1181261683
     Data4: 856258356
   Banks:
-  - {fileID: 5167459896295866466}
-  IsStream: 0
-  Is3D: 1
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 1000
---- !u!114 &6743340327640284500
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/ghosts/ghost_vanish
-  m_EditorClassIdentifier: 
-  Path: event:/ghosts/ghost_vanish
-  Guid:
-    Data1: -1660024500
-    Data2: 1283349368
-    Data3: -438616404
-    Data4: 1432924315
-  Banks:
-  - {fileID: -8831599643956619670}
+  - {fileID: -9112153613886482973}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -758,7 +910,7 @@ MonoBehaviour:
     Data3: 352768946
     Data4: 1230381298
   Banks:
-  - {fileID: 5167459896295866466}
+  - {fileID: -9112153613886482973}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -766,28 +918,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 25098
---- !u!114 &7264045075110611304
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/ambience.bank
-  m_EditorClassIdentifier: 
-  Path: ../SCP-I-cant-change-the-radio-while-im-driving/Assets/audio/FMOD Studio
-    SCP-8991 Project/Build/Desktop/ambience.bank
-  Name: ambience
-  StudioPath: bank:/ambience
-  lastModified: 638162093096435234
-  FileSizes:
-  - Name: Desktop
-    Value: 1857536
-  Exists: 1
---- !u!114 &8176823923329987712
+--- !u!114 &7862494613357804845
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -797,43 +928,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/radio/channel_1
+  m_Name: event:/car/window/car_winder
   m_EditorClassIdentifier: 
-  Path: event:/radio/channel_1
-  Guid:
-    Data1: 1031606946
-    Data2: 1328408375
-    Data3: 1552535982
-    Data4: 318982967
-  Banks:
-  - {fileID: 5167459896295866466}
-  IsStream: 0
-  Is3D: 0
-  IsOneShot: 1
-  Parameters: []
-  MinDistance: 1
-  MaxDistance: 20
-  Length: 0
---- !u!114 &8891568064133957138
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/car/car_winder/car_winder_up
-  m_EditorClassIdentifier: 
-  Path: event:/car/car_winder/car_winder_up
+  Path: event:/car/window/car_winder
   Guid:
     Data1: 2131395646
     Data2: 1269263899
     Data3: 1392036285
     Data4: -785020452
   Banks:
-  - {fileID: 1127247027876014284}
+  - {fileID: 1042357406730204263}
   IsStream: 0
   Is3D: 1
   IsOneShot: 1
@@ -841,3 +945,30 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 4411
+--- !u!114 &8694587309914767725
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/ghosts/banshee_vanish
+  m_EditorClassIdentifier: 
+  Path: event:/ghosts/banshee_vanish
+  Guid:
+    Data1: -1660024500
+    Data2: 1283349368
+    Data3: -438616404
+    Data4: 1432924315
+  Banks:
+  - {fileID: -1844207375133705967}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1000
