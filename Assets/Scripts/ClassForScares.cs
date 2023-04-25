@@ -55,41 +55,44 @@ public class ClassForScares : MonoBehaviour
 
     public void Selector()
     {
+       if (numScaresOn <= objectScaresArray.Length - 1)
+        {
+            // time between the scares happening
+            timeBetweenScares = UnityEngine.Random.Range(8f, 20f / (numScaresOn + 1f));
+
+            // which scare is selected
+            int scareNumber = UnityEngine.Random.Range(0, 3);
+
+            if (objectScaresArray[scareNumber].objectInGame.activeSelf)
+            {
+                Debug.Log("if statement checking if the object is active");
+                selectionForLoop(scareNumber);
+
+            }
+            else
+            {
+                Debug.Log("object Not a duplicate");
+                pickScare = objectScaresArray[scareNumber].objectInGame;
+                pickScare.SetActive(true);
+
+            }
+            StartCoroutine(timerForScare());
+
+
+
+            // replace with script of having each object come in smoother
+            // order array so only available ones are there
+
+
+            SanityChange(UnityEngine.Random.Range(0, numScaresOn));
+
+            if (numScaresOn < 2f)
+            {
+                numScaresOn++;
+
+            }
+        }
        
-        // time between the scares happening
-        timeBetweenScares = UnityEngine.Random.Range(8f, 30f / (numScaresOn + 1f));
-
-        // which scare is selected
-        int scareNumber = UnityEngine.Random.Range(0, 3);
-
-        if (objectScaresArray[scareNumber].objectInGame.activeSelf)
-        {
-            Debug.Log("if statement checking if the object is active");
-            selectionForLoop(scareNumber);
-            
-        }
-        else
-        {
-            Debug.Log("object Not a duplicate");
-            pickScare = objectScaresArray[scareNumber].objectInGame;
-            pickScare.SetActive(true);
-
-        }
-        StartCoroutine(timerForScare());
-
-
-
-        // replace with script of having each object come in smoother
-        // order array so only available ones are there
-
-
-        SanityChange(UnityEngine.Random.Range(0, numScaresOn));
-
-        if (numScaresOn < 2f)
-        {
-            numScaresOn++;
-
-        }
 
 
     }

@@ -7,6 +7,12 @@ public class Oldman : MonoBehaviour
     public GameObject player;
     public float speed = 5f;
     private float timer = 0f;
+    private Transform startingTransform;
+
+    private void Start()
+    {
+        gameObject.transform.position = startingTransform.position;
+    }
 
     private void Update()
     {
@@ -16,7 +22,7 @@ public class Oldman : MonoBehaviour
         timer += Time.deltaTime;
         if (timer >= 10f)
         {
-            Destroy(gameObject);
+            gameObjectReset();
         }
     }
 
@@ -24,7 +30,13 @@ public class Oldman : MonoBehaviour
     {
         if (collision.gameObject == player)
         {
-            Destroy(gameObject);
+            gameObjectReset();
         }
     }
+
+    private void gameObjectReset()
+    {
+        startingTransform.position = transform.position;
+    }
+
 }
