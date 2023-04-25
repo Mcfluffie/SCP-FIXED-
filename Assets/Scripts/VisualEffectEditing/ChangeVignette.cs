@@ -17,11 +17,9 @@ public class ChangeVignette : MonoBehaviour
     public float saturation;
 
 
-    public bool sanityDepreciating;
     public float vignetteLerpTime;
     public AnimationCurve curve;
-
-    public Material road;
+    
 
     public float sanityTimer;
 
@@ -29,8 +27,6 @@ public class ChangeVignette : MonoBehaviour
     
     public float sanityTimeOut = 1f;
     private float previousLevel;
-
-    private float i;
 
     private UnityEngine.Rendering.Universal.Vignette vignette;
     private UnityEngine.Rendering.Universal.ColorAdjustments colourAdj;
@@ -43,13 +39,14 @@ public class ChangeVignette : MonoBehaviour
     private float interpolatedSanity;
     private float startingIntensityVignette;
 
+    public ClassForScares isScareClassInUse;
+
     public float timeToHeal = 1f;
 
     // Update is called once per frame
     void Update()
     {
 
-        
 
         // create a list of input devices and find the one with specific characteristics 
         List<InputDevice> devices = new List<InputDevice>();
@@ -66,17 +63,7 @@ public class ChangeVignette : MonoBehaviour
         // find amungst the flaming ruins the controller set in the variables'primary button if it has it and give the bool of that primary button
         targetDevice.TryGetFeatureValue(CommonUsages.primaryButton, out bool primaryButtonValue);
 
-        if (primaryButtonValue || Input.GetKeyDown(KeyCode.Space))
-        {
-
-            
-        }
-
-
-      
-
-
-
+        
 
         
         interpolatedSanity += Mathf.Sign(sanityLevel - interpolatedSanity) * Mathf.Clamp(Time.deltaTime / vignetteLerpTime, 0f, Mathf.Abs(interpolatedSanity - sanityLevel));
@@ -100,7 +87,10 @@ public class ChangeVignette : MonoBehaviour
 
         }
 
-
+        //if (the scare is still active)
+        //{
+        //  don't do the following if statement
+        //}
 
         if (sanityTimer > 0)
         {
@@ -109,9 +99,9 @@ public class ChangeVignette : MonoBehaviour
             sanityTimer -= Time.deltaTime;
 
         }
-        else
+        else if (isScareClassInUse.numScaresOn < 1f)
         {
-            // sanity bar decreases and is clamped
+            // sanity bar decreases, removing visual impairments the longer its on and is clamped
             sanityLevel = Mathf.Clamp(sanityLevel - Time.deltaTime / timeToHeal, 0f, 1f);
 
         }
@@ -124,20 +114,6 @@ public class ChangeVignette : MonoBehaviour
         sanityTimer = sanityTimeOut;
         sanityLevel += adjSanInc;
     }
-
-
-    //IEnumerator SanityChange()
-    //{
-
-    //    // lerps the variables into their next position
-
-
-    //    float i = 0;
-
-
-
-
-    //}
 
 
     private void Awake()

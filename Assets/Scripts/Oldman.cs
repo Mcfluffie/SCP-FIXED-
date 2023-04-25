@@ -7,8 +7,17 @@ public class Oldman : MonoBehaviour
     public GameObject player;
     public float speed = 5f;
     private float timer = 0f;
+<<<<<<< HEAD
     public GameObject childObject; // assign the child object in the inspector
     public GameObject parentObject; // assign the parent object in the inspector
+=======
+    private Transform startingTransform;
+
+    private void Start()
+    {
+        gameObject.transform.position = startingTransform.position;
+    }
+>>>>>>> visuals
 
     private void Update()
     {
@@ -18,7 +27,7 @@ public class Oldman : MonoBehaviour
         timer += Time.deltaTime;
         if (timer >= 10f)
         {
-            Destroy(gameObject);
+            gameObjectReset();
         }
     }
 
@@ -26,10 +35,11 @@ public class Oldman : MonoBehaviour
     {
         if (collision.gameObject == player)
         {
-            Destroy(gameObject);
+            gameObjectReset();
         }
     }
 
+<<<<<<< HEAD
     private void OnEnable()
     {
         childObject.transform.SetParent(null);
@@ -40,3 +50,11 @@ public class Oldman : MonoBehaviour
         childObject.transform.SetParent(parentObject.transform);
     }
 }
+=======
+    private void gameObjectReset()
+    {
+        startingTransform.position = transform.position;
+    }
+
+}
+>>>>>>> visuals
