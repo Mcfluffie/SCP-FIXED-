@@ -16,6 +16,8 @@ public class Fowardtest : MonoBehaviour
     private Quaternion targetRotation; // The target rotation of the car
     public float maxMagnitude = 2.0f; // maximum magnitude for carDirection
 
+    public Steeringwheel carWheel;
+
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -41,22 +43,28 @@ public class Fowardtest : MonoBehaviour
 
     void Update()
     {
-        rb.AddForce(Vector3.forward * speed * Time.deltaTime);
 
-        // Calculate the direction of the car based on the rotation of the steering wheel
-        
-        Vector3 carDirection = Quaternion.Euler(0, steeringWheel.rotation.eulerAngles.y, 0) * Vector3.forward;
-        carDirection = Vector3.ClampMagnitude(carDirection, maxMagnitude);
+        if (carWheel.firstInteraction == true)
+        {
 
-        // Apply the direction to the rigidbody of the car
-        rb.velocity = carDirection * speed;
+            rb.AddForce(Vector3.forward * speed * Time.deltaTime);
 
-        // Calculate the target rotation based on the steering angle
-        float steeringAngle = Mathf.Clamp(steeringWheel.localRotation.eulerAngles.z, -maxSteeringAngle, maxSteeringAngle);
-        targetRotation = Quaternion.Euler(transform.rotation.eulerAngles.x, steeringWheel.rotation.eulerAngles.y + steeringAngle, transform.rotation.eulerAngles.z);
+            // Calculate the direction of the car based on the rotation of the steering wheel
 
-        // Rotate the car towards the target rotation using lerp
-        transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, rotationSpeed + Time.deltaTime);
+            Vector3 carDirection = Quaternion.Euler(0, steeringWheel.rotation.eulerAngles.y, 0) * Vector3.forward;
+            carDirection = Vector3.ClampMagnitude(carDirection, maxMagnitude);
+
+            // Apply the direction to the rigidbody of the car
+            rb.velocity = carDirection * speed;
+
+            // Calculate the target rotation based on the steering angle
+            float steeringAngle = Mathf.Clamp(steeringWheel.localRotation.eulerAngles.z, -maxSteeringAngle, maxSteeringAngle);
+            targetRotation = Quaternion.Euler(transform.rotation.eulerAngles.x, steeringWheel.rotation.eulerAngles.y + steeringAngle, transform.rotation.eulerAngles.z);
+
+            // Rotate the car towards the target rotation using lerp
+            transform.rotation = Quaternion.Lerp(transform.rotation, targetRotation, rotationSpeed + Time.deltaTime);
+        }
+
     }
 }
 

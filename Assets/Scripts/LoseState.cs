@@ -16,7 +16,7 @@ public class LoseState : MonoBehaviour
     {
         // Shoot a raycast down from the player
         RaycastHit hitInfo;
-       
+        Debug.DrawLine(transform.position, Vector3.down);
         if (Physics.Raycast(transform.position, Vector3.down, out hitInfo, raycastDistance))
         {
             // The raycast hit something

@@ -10,7 +10,8 @@ public class Steeringwheel : XRBaseInteractable
 
     private float currentAngle = 0.0f;
     public float steeringsesns = 0.05f;
- 
+
+    public bool firstInteraction = false;
 
 
 
@@ -38,6 +39,7 @@ public class Steeringwheel : XRBaseInteractable
         if (updatePhase == XRInteractionUpdateOrder.UpdatePhase.Dynamic)
         {
             if (isSelected)
+                firstInteraction = true;
                 RotateWheel();
         }
     }
