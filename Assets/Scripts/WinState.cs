@@ -8,10 +8,10 @@ public class WinState : MonoBehaviour
 
     
 
-    void OnCollisionEnter(Collision collision)
-    
+
+    private void OnTriggerEnter(Collider other)
     {
-        if(collision.gameObject.tag == "Win")
+        if (other.gameObject.tag == "Win")
         {
             Win();
         }
