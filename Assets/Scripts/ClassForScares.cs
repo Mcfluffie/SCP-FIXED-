@@ -25,10 +25,8 @@ public class ClassForScares : MonoBehaviour
     public GameObject pickScare;
     public GameObject foundScare;
 
-    private void Awake()
-    {
-        StartCoroutine(timerForScare());
-    }
+
+    public Fowardtest isSteering;
 
 
     // if i were to start over I would
@@ -190,13 +188,12 @@ public class ClassForScares : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-
-        if (Input.GetKey(KeyCode.Space))
+        if (isSteering)
         {
-            FindAndTurnOff(objectScaresArray[1].objectInGame);
-
+            StartCoroutine(timerForScare());
         }
+
+       
 
         ActiveScares();
 
