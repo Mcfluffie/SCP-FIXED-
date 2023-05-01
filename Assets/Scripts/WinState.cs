@@ -2,16 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class WinState : MonoBehaviour
 {
     public GameObject WinScreen;
 
-    
-
-    void OnCollisionEnter(Collision collision)
-    
+    private void Start()
     {
-        if(collision.gameObject.tag == "Win")
+        WinScreen.SetActive(false);
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (CompareTag("Player"))
         {
             Win();
         }

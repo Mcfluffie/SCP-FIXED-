@@ -10,6 +10,7 @@ TagManager:
   - Wheel
   - LeftTrigger
   - RightTrigger
+  - RadioTriggerL
   layers:
   - Default
   - TransparentFX
