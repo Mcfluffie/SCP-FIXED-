@@ -46,7 +46,7 @@ public class ChangeVignette : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        
 
         // create a list of input devices and find the one with specific characteristics 
         List<InputDevice> devices = new List<InputDevice>();
