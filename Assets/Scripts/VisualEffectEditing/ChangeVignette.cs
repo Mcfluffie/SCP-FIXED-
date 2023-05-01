@@ -60,7 +60,7 @@ public class ChangeVignette : MonoBehaviour
         {
             targetDevice = devices[0];
         }
-        // find amungst the flaming ruins the controller set in the variables'primary button if it has it and give the bool of that primary button
+        // find amongst the flaming ruins the controller set in the variables'primary button if it has it and give the bool of that primary button
         targetDevice.TryGetFeatureValue(CommonUsages.primaryButton, out bool primaryButtonValue);
 
         
