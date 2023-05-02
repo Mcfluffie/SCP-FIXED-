@@ -268,7 +268,7 @@
 			<value>Directivity</value>
 		</property>
 		<property name="value">
-			<value>0.5</value>
+			<value>0.0949999988</value>
 		</property>
 		<property name="curve">
 			<value>{(0.000000,0.000000)(1.000000,1.000000)}</value>
