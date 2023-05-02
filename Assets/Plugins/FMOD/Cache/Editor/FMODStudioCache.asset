@@ -39,11 +39,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
   m_Name: bank:/radio.bank
   m_EditorClassIdentifier: 
-  Path: ../SCP-I-cant-change-the-radio-while-im-driving/Assets/audio/FMOD Studio
-    SCP-8991 Project/Build/Desktop/ghosts.bank
-  Name: ghosts
-  StudioPath: bank:/ghosts
-  lastModified: 638161132045762285
+  Path: Assets/audio/FMOD Studio SCP-8991 Project/Build/Desktop/radio.bank
+  Name: radio
+  StudioPath: bank:/radio
+  lastModified: 638180620483180666
   FileSizes:
   - Name: Desktop
     Value: 54637312
@@ -60,11 +59,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
   m_Name: bank:/ui.bank
   m_EditorClassIdentifier: 
-  Path: ../SCP-I-cant-change-the-radio-while-im-driving/Assets/audio/FMOD Studio
-    SCP-8991 Project/Build/Desktop/hud.bank
-  Name: hud
-  StudioPath: bank:/hud
-  lastModified: 638149492674251307
+  Path: Assets/audio/FMOD Studio SCP-8991 Project/Build/Desktop/ui.bank
+  Name: ui
+  StudioPath: bank:/ui
+  lastModified: 638180620480622028
   FileSizes:
   - Name: Desktop
     Value: 46496
@@ -111,7 +109,7 @@ MonoBehaviour:
   Path: Assets/audio/FMOD Studio SCP-8991 Project/Build/Desktop/ambience.bank
   Name: ambience
   StudioPath: bank:/ambience
-  lastModified: 638182922978785487
+  lastModified: 638180620480777157
   FileSizes:
   - Name: Desktop
     Value: 5707296
@@ -441,7 +439,7 @@ MonoBehaviour:
   Path: Assets/audio/FMOD Studio SCP-8991 Project/Build/Desktop/ghosts.bank
   Name: ghosts
   StudioPath: bank:/ghosts
-  lastModified: 638180250295221769
+  lastModified: 638180620480757139
   FileSizes:
   - Name: Desktop
     Value: 435616
@@ -574,9 +572,8 @@ MonoBehaviour:
   MasterBanks:
   - {fileID: -2729089026712800206}
   StringsBanks:
-  - {fileID: -3057576187251575024}
-  - {fileID: 1905441419520147965}
-  cacheTime: 638182922981884063
+  - {fileID: 2699132842776202622}
+  cacheTime: 638180620483180666
   cacheVersion: 131601
 --- !u!114 &811138096003029933
 MonoBehaviour:
@@ -620,7 +617,7 @@ MonoBehaviour:
   Path: Assets/audio/FMOD Studio SCP-8991 Project/Build/Desktop/car.bank
   Name: car
   StudioPath: bank:/car
-  lastModified: 638180250295006590
+  lastModified: 638180620480762144
   FileSizes:
   - Name: Desktop
     Value: 1799648
@@ -711,11 +708,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
   m_Name: bank:/Master.strings.bank
   m_EditorClassIdentifier: 
-  Path: ../SCP-I-cant-change-the-radio-while-im-driving/Assets/audio/FMOD Studio
-    SCP-8991 Project/Build/Desktop/car.bank
-  Name: car
-  StudioPath: bank:/car
-  lastModified: 638161132046184200
+  Path: Assets/audio/FMOD Studio SCP-8991 Project/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638180620480752138
   FileSizes:
   - Name: Desktop
     Value: 2140
