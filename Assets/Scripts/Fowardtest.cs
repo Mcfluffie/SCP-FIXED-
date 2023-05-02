@@ -12,6 +12,7 @@ public class Fowardtest : MonoBehaviour
    // public ForceMode forceMode = ForceMode.Impulse; // The type of force to add
     public Transform steeringWheel; // The transform of the steering wheel object
 
+
     private Rigidbody rb;
     private Quaternion targetRotation; // The target rotation of the car
     public float maxMagnitude = 2.0f; // maximum magnitude for carDirection

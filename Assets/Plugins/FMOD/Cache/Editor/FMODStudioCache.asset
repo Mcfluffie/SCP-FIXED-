@@ -111,7 +111,7 @@ MonoBehaviour:
   Path: Assets/audio/FMOD Studio SCP-8991 Project/Build/Desktop/ambience.bank
   Name: ambience
   StudioPath: bank:/ambience
-  lastModified: 638180620480777157
+  lastModified: 638182922978785487
   FileSizes:
   - Name: Desktop
     Value: 5707296
@@ -521,7 +521,7 @@ MonoBehaviour:
   - {fileID: -9112153613886482973}
   - {fileID: -2334060883048270871}
   - {fileID: -8311044626406459168}
-  - {fileID: 2821160662562081596}
+  - {fileID: 1905441419520147965}
   EditorEvents:
   - {fileID: 3562169629527867712}
   - {fileID: -2069126488212505685}
@@ -555,8 +555,8 @@ MonoBehaviour:
   - {fileID: -2729089026712800206}
   StringsBanks:
   - {fileID: -3057576187251575024}
-  - {fileID: 2821160662562081596}
-  cacheTime: 638180620483180666
+  - {fileID: 1905441419520147965}
+  cacheTime: 638182922981884063
   cacheVersion: 131601
 --- !u!114 &811138096003029933
 MonoBehaviour:
@@ -632,6 +632,26 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
+--- !u!114 &1905441419520147965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/audio/FMOD Studio SCP-8991 Project/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638182922977109041
+  FileSizes:
+  - Name: Desktop
+    Value: 2140
+  Exists: 1
 --- !u!114 &2439197374417176640
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -680,26 +700,6 @@ MonoBehaviour:
   - Name: Desktop
     Value: 2140
   Exists: 0
---- !u!114 &2821160662562081596
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.strings.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/audio/FMOD Studio SCP-8991 Project/Build/Desktop/Master.strings.bank
-  Name: Master.strings
-  StudioPath: bank:/Master.strings
-  lastModified: 638180620480752138
-  FileSizes:
-  - Name: Desktop
-    Value: 2140
-  Exists: 1
 --- !u!114 &3393366091486735122
 MonoBehaviour:
   m_ObjectHideFlags: 0

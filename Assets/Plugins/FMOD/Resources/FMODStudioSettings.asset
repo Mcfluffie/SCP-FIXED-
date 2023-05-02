@@ -384,14 +384,15 @@ MonoBehaviour:
   RealChannelSettings: []
   Plugins: []
   MasterBanks:
-  - Master
+  - ui
   Banks:
   - ambience
   - car
+  - car
   - ghosts
-  - radio
+  - ghosts
+  - hud
   - road
-  - ui
   BanksToLoad: []
   LiveUpdatePort: 9264
   EnableMemoryTracking: 0
