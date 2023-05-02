@@ -115,7 +115,7 @@ MonoBehaviour:
   FileSizes:
   - Name: Desktop
     Value: 5707296
-  Exists: 1
+  Exists: 0
 --- !u!114 &-7781083718492799840
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -278,7 +278,7 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 0
---- !u!114 &-3951974217059751296
+--- !u!114 &-4278962667088131128
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -287,8 +287,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
-  m_Name: event:/radio/stations/station_3
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
   m_EditorClassIdentifier: 
   Path: ../SCP-I-cant-change-the-radio-while-im-driving/Assets/audio/FMOD Studio
     SCP-8991 Project/Build/Desktop/Master.strings.bank
@@ -473,6 +473,26 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 556052
+--- !u!114 &-1011093204788932216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/audio/FMOD Studio SCP-8991 Project/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638180370460684426
+  FileSizes:
+  - Name: Desktop
+    Value: 2140
+  Exists: 0
 --- !u!114 &-486869862614769368
 MonoBehaviour:
   m_ObjectHideFlags: 0

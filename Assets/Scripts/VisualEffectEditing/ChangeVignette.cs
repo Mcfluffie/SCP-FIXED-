@@ -46,7 +46,7 @@ public class ChangeVignette : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        
 
         // create a list of input devices and find the one with specific characteristics 
         List<InputDevice> devices = new List<InputDevice>();
@@ -60,7 +60,7 @@ public class ChangeVignette : MonoBehaviour
         {
             targetDevice = devices[0];
         }
-        // find amungst the flaming ruins the controller set in the variables'primary button if it has it and give the bool of that primary button
+        // find amongst the flaming ruins the controller set in the variables'primary button if it has it and give the bool of that primary button
         targetDevice.TryGetFeatureValue(CommonUsages.primaryButton, out bool primaryButtonValue);
 
         

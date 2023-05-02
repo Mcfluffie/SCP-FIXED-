@@ -855,6 +855,37 @@ Transform:
   m_Father: {fileID: 4603189716278740799}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2792490150366239873
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1576658527563448766, guid: 587dbdc7221c86b4d9f176a15145661d, type: 3}
+  m_PrefabInstance: {fileID: 3684367175014538559}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2792490150366239874}
+  m_Layer: 0
+  m_Name: 'ghosthand (Missing Prefab with guid: 587dbdc7221c86b4d9f176a15145661d)'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2792490150366239874
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1576658527309848159, guid: 587dbdc7221c86b4d9f176a15145661d, type: 3}
+  m_PrefabInstance: {fileID: 3684367175014538559}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2792490150366239873}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.013, z: 0.0081}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6147419968873874151}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2792490150568840772
 GameObject:
   m_ObjectHideFlags: 0
@@ -1033,6 +1064,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myEventEmittertoplay: {fileID: 2792490150568840771}
+  HorrorRadio: {fileID: 0}
   myEventEmittertostop: {fileID: 2792490151873475394}
   myEventEmittertostop2: {fileID: 6147419969495722602}
   myEventEmittertostop3: {fileID: 2792490151929317956}
@@ -1247,6 +1279,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myEventEmittertoplay: {fileID: 2792490151929317956}
+  HorrorRadio: {fileID: 0}
   myEventEmittertostop: {fileID: 2792490151873475394}
   myEventEmittertostop2: {fileID: 6147419969495722602}
   myEventEmittertostop3: {fileID: 2792490150568840771}
@@ -2640,6 +2673,7 @@ GameObject:
   - component: {fileID: 3432193139976781214}
   - component: {fileID: 3432193139976781212}
   - component: {fileID: 3432193139976781213}
+  - component: {fileID: 4306123485914655821}
   - component: {fileID: 3432193139976781208}
   m_Layer: 0
   m_Name: OLdman
@@ -2712,6 +2746,21 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 118
   m_CollisionDetection: 0
+--- !u!114 &4306123485914655821
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3432193139976781215}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a0b4f14a0eedf14ba70e815245dc7f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 6147419969586279928}
+  speed: 7
+  timer: 2
 --- !u!114 &3432193139976781208
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2721,11 +2770,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 3432193139976781215}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 160471fde3e923a42bdb9999f50bebb1, type: 3}
+  m_Script: {fileID: 11500000, guid: 9a0b4f14a0eedf14ba70e815245dc7f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 3794845653632736645}
-  speed: 2
+  player: {fileID: 0}
+  speed: 0
+  timer: 0
 --- !u!1 &3432306647227548863
 GameObject:
   m_ObjectHideFlags: 0
@@ -14247,7 +14297,7 @@ Transform:
   - {fileID: 6147419970070112432}
   - {fileID: 6147419968218915109}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &4603189716278740794
 MonoBehaviour:
@@ -14264,10 +14314,9 @@ MonoBehaviour:
   speed: 60
   maxSteeringAngle: 0.5
   rotationSpeed: 5
-  forceAmount: 4
-  forceMode: 0
   steeringWheel: {fileID: 6147419969464038366}
   maxMagnitude: 2
+  carWheel: {fileID: 0}
 --- !u!54 &4603189716278740793
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -15416,6 +15465,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   steeringsesns: 0.008
+  firstInteraction: 0
 --- !u!95 &3432193138646583264
 Animator:
   serializedVersion: 5
@@ -16867,6 +16917,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myEventEmittertoplay: {fileID: 6147419969495722602}
+  HorrorRadio: {fileID: 0}
   myEventEmittertostop: {fileID: 2792490151873475394}
   myEventEmittertostop2: {fileID: 2792490151929317956}
   myEventEmittertostop3: {fileID: 2792490150568840771}
@@ -17644,6 +17695,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   myEventEmittertoplay: {fileID: 2792490151873475394}
+  HorrorRadio: {fileID: 0}
   myEventEmittertostop: {fileID: 6147419969495722602}
   myEventEmittertostop2: {fileID: 2792490151929317956}
   myEventEmittertostop3: {fileID: 2792490150568840771}
@@ -17969,7 +18021,7 @@ MonoBehaviour:
   ghosthand: {fileID: 2792490150366239873}
   anime: {fileID: 8439725221198958800}
   delay: 2
-  ghosthandAnim: {fileID: 2792490151935202106}
+  ghosthandAnim: {fileID: 0}
 --- !u!1 &6147419970070112433
 GameObject:
   m_ObjectHideFlags: 0
@@ -20062,18 +20114,3 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 587dbdc7221c86b4d9f176a15145661d, type: 3}
---- !u!1 &2792490150366239873 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1576658527563448766, guid: 587dbdc7221c86b4d9f176a15145661d, type: 3}
-  m_PrefabInstance: {fileID: 3684367175014538559}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &2792490150366239874 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1576658527563448765, guid: 587dbdc7221c86b4d9f176a15145661d, type: 3}
-  m_PrefabInstance: {fileID: 3684367175014538559}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &2792490151935202106 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 1576658526968090117, guid: 587dbdc7221c86b4d9f176a15145661d, type: 3}
-  m_PrefabInstance: {fileID: 3684367175014538559}
-  m_PrefabAsset: {fileID: 0}

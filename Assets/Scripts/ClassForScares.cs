@@ -16,7 +16,7 @@ public class ClassForScares : MonoBehaviour
 
     [SerializeField] private ObjectScares[] objectScaresArray;
 
-
+    public int numberOfScaresThatArentNull;
 
     public ChangeVignette vignetteChange;
     
@@ -25,10 +25,8 @@ public class ClassForScares : MonoBehaviour
     public GameObject pickScare;
     public GameObject foundScare;
 
-    private void Awake()
-    {
-        StartCoroutine(timerForScare());
-    }
+
+    public Fowardtest isSteering;
 
 
     // if i were to start over I would
@@ -55,36 +53,30 @@ public class ClassForScares : MonoBehaviour
 
     public void Selector()
     {
-       if (numScaresOn <= objectScaresArray.Length - 1)
+       if (numScaresOn <= objectScaresArray.Length - numberOfScaresThatArentNull)
         {
             // time between the scares happening
             timeBetweenScares = UnityEngine.Random.Range(8f, 20f / (numScaresOn + 1f));
 
             // which scare is selected
-            int scareNumber = UnityEngine.Random.Range(0, 3);
+            int scareNumber = UnityEngine.Random.Range(0, objectScaresArray.Length - 1);
 
             if (objectScaresArray[scareNumber].objectInGame.activeSelf)
             {
-                Debug.Log("if statement checking if the object is active");
-                selectionForLoop(scareNumber);
+
+                SortingIfAvailable(scareNumber);
+
 
             }
             else
             {
-                Debug.Log("object Not a duplicate");
+
                 pickScare = objectScaresArray[scareNumber].objectInGame;
                 pickScare.SetActive(true);
 
             }
+            SanityChange(scareNumber);
             StartCoroutine(timerForScare());
-
-
-
-            // replace with script of having each object come in smoother
-            // order array so only available ones are there
-
-
-            SanityChange(UnityEngine.Random.Range(0, numScaresOn));
 
             if (numScaresOn < 2f)
             {
@@ -92,21 +84,19 @@ public class ClassForScares : MonoBehaviour
 
             }
         }
-       
-
 
     }
 
 
-    void selectionForLoop(int scareNum)
+    void SortingIfAvailable(int scareNum)
     {
-        Debug.Log("PLEASE WORK FOR THE LOVE OF GOD");
+
         for (int i = 0; i < objectScaresArray.Length - 1f; i++)
         {
-            Debug.Log("for loop");
+
             if (!objectScaresArray[i].objectInGame.activeSelf && objectScaresArray[i].isAvailable)
             {
-                Debug.Log("found the right object");
+
                 scareNum = i;
                 pickScare = objectScaresArray[scareNum].objectInGame;
                 pickScare.SetActive(true);
@@ -166,7 +156,7 @@ public class ClassForScares : MonoBehaviour
         }
 
         Debug.Log("timer set to 0");
-        timer = 0f;
+        
 
         // goes to selector next
 
@@ -177,7 +167,17 @@ public class ClassForScares : MonoBehaviour
     public void SanityChange(int scareArrayPosition)
     {
         // add a number to the sanity meter (this number needs to be consistant so it might as well be a stock number that gets called every scare)
-        vignetteChange.AddSanityChange(objectScaresArray[scareArrayPosition].scareValue / 10f);
+
+        if (vignetteChange.sanityLevel <= 0.6f)
+        {
+            vignetteChange.AddSanityChange(objectScaresArray[scareArrayPosition].scareValue / 10f);
+        }
+        else
+        {
+            vignetteChange.AddSanityChange((objectScaresArray[scareArrayPosition].scareValue / 10f));
+        }
+
+        
         Debug.Log("sanityChangeActivated in SCP Spawner");
     }
 
@@ -190,13 +190,12 @@ public class ClassForScares : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-
-        if (Input.GetKey(KeyCode.Space))
+        if (isSteering)
         {
-            FindAndTurnOff(objectScaresArray[1].objectInGame);
-
+            StartCoroutine(timerForScare());
         }
+
+       
 
         ActiveScares();
 

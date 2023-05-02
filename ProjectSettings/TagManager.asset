@@ -10,13 +10,12 @@ TagManager:
   - Wheel
   - LeftTrigger
   - RightTrigger
-  - RadioTriggerL
-  - RadioTriggerL, RadioTrigger
+  - death
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - death
   - Water
   - UI
   - grab
