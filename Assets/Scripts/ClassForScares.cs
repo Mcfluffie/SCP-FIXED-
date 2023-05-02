@@ -75,12 +75,12 @@ public class ClassForScares : MonoBehaviour
                 pickScare.SetActive(true);
 
             }
-            SanityChange(scareNumber);
-            StartCoroutine(timerForScare());
 
             if (numScaresOn < 2f)
             {
                 numScaresOn++;
+                StartCoroutine(timerForScare());
+
 
             }
         }
@@ -100,6 +100,8 @@ public class ClassForScares : MonoBehaviour
                 scareNum = i;
                 pickScare = objectScaresArray[scareNum].objectInGame;
                 pickScare.SetActive(true);
+                SanityChange(scareNum);
+
             }
         }
     }
@@ -145,6 +147,7 @@ public class ClassForScares : MonoBehaviour
 
         if (numScaresOn > 2f)
         {
+            Selector();
             StartCoroutine(timerForScare());
             Debug.Log("the coroutine restarts");
         }
