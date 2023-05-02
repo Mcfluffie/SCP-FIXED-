@@ -1040,7 +1040,7 @@ MonoBehaviour:
       Data2: 1328408375
       Data3: 1552535982
       Data4: 318982967
-    Path: event:/radio/channel_1
+    Path: event:/radio/stations/station_1
   Event: 
   PlayEvent: 3
   StopEvent: 0
@@ -1063,7 +1063,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 034b42281501aaa489f3efa204264e2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myEventEmittertoplay: {fileID: 2792490150568840771}
+  myEventEmittertoplay1: {fileID: 0}
+  myEventEmittertoplay2: {fileID: 0}
   HorrorRadio: {fileID: 0}
   myEventEmittertostop: {fileID: 2792490151873475394}
   myEventEmittertostop2: {fileID: 6147419969495722602}
@@ -1255,7 +1256,7 @@ MonoBehaviour:
       Data2: 1110300999
       Data3: -671110747
       Data4: 271652293
-    Path: event:/radio/channel_2
+    Path: event:/radio/stations/station_2
   Event: 
   PlayEvent: 3
   StopEvent: 0
@@ -1278,7 +1279,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 034b42281501aaa489f3efa204264e2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myEventEmittertoplay: {fileID: 2792490151929317956}
+  myEventEmittertoplay1: {fileID: 0}
+  myEventEmittertoplay2: {fileID: 0}
   HorrorRadio: {fileID: 0}
   myEventEmittertostop: {fileID: 2792490151873475394}
   myEventEmittertostop2: {fileID: 6147419969495722602}
@@ -16893,7 +16895,7 @@ MonoBehaviour:
       Data2: 1110300999
       Data3: -671110747
       Data4: 271652293
-    Path: event:/radio/channel_2
+    Path: event:/radio/stations/station_2
   Event: 
   PlayEvent: 3
   StopEvent: 0
@@ -16916,7 +16918,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 034b42281501aaa489f3efa204264e2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myEventEmittertoplay: {fileID: 6147419969495722602}
+  myEventEmittertoplay1: {fileID: 0}
+  myEventEmittertoplay2: {fileID: 0}
   HorrorRadio: {fileID: 0}
   myEventEmittertostop: {fileID: 2792490151873475394}
   myEventEmittertostop2: {fileID: 2792490151929317956}
@@ -17506,7 +17509,7 @@ MonoBehaviour:
       Data2: 1269263899
       Data3: 1392036285
       Data4: -785020452
-    Path: event:/car/car_winder/car_winder_up
+    Path: event:/car/window/car_winder
   Event: 
   PlayEvent: 0
   StopEvent: 0
@@ -17671,7 +17674,7 @@ MonoBehaviour:
       Data2: 1328408375
       Data3: 1552535982
       Data4: 318982967
-    Path: event:/radio/channel_1
+    Path: event:/radio/stations/station_1
   Event: 
   PlayEvent: 3
   StopEvent: 0
@@ -17694,7 +17697,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 034b42281501aaa489f3efa204264e2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  myEventEmittertoplay: {fileID: 2792490151873475394}
+  myEventEmittertoplay1: {fileID: 0}
+  myEventEmittertoplay2: {fileID: 0}
   HorrorRadio: {fileID: 0}
   myEventEmittertostop: {fileID: 6147419969495722602}
   myEventEmittertostop2: {fileID: 2792490151929317956}
