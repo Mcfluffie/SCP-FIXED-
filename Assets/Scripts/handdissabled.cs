@@ -10,7 +10,7 @@ public class handdissabled : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("RadioTriggerL"))
+        if (other.CompareTag("RadioTrigger"))
         {
             isDisabled = true;
             hand.SetActive(false);

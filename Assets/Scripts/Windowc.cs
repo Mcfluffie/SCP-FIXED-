@@ -26,7 +26,7 @@ public class Windowc : MonoBehaviour
 
     public void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("RadioTriggerL"))
+        if (other.CompareTag("RadioTrigger"))
         {
             anime.Play("Window");
             ghosthandAnim.Play("Ghost_Hand_Slip");
@@ -36,7 +36,7 @@ public class Windowc : MonoBehaviour
 
     public void OnTriggerExit(Collider other)
     {
-        if (other.CompareTag("RadioTriggerL"))
+        if (other.CompareTag("RadioTrigger"))
         {
             anime.Play("windowidle");
         }

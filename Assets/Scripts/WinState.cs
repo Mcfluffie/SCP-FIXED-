@@ -12,15 +12,16 @@ public class WinState : MonoBehaviour
         WinScreen.SetActive(false);
     }
 
-    private void OnTriggerEnter(Collider other)
+    public void OnTriggerEnter(Collider other)
     {
-        if (CompareTag("Player"))
+        if (other.CompareTag("Player"))
         {
+            Debug.Log("WINER");
             Win();
         }
     }
 
-    void Win()
+    public void Win()
     {
         WinScreen.SetActive(true);
         //emitter.play();
