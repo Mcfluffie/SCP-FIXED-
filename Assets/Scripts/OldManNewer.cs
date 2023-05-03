@@ -19,16 +19,19 @@ public class OldManNewer : MonoBehaviour
     {
         if (player.transform.position != gameObject.transform.position)
         {
-            Vector3 direction = Vector3.Normalize(startPos.transform.position - transform.position);
+            Vector3 direction = Vector3.Normalize(player.transform.position - transform.position);
             transform.Translate(direction * speed * Time.deltaTime);
 
             timer += Time.deltaTime;
             if (timer >= 10f)
             {
-                timer = 0f;
+                gameObject.transform.position = startPos.transform.position;
                 scareClass.FindAndTurnOff(gameObject);
+                timer = 0f;
+
 
             }
+            
         }
 
         
