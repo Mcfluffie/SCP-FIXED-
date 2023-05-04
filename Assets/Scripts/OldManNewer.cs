@@ -27,7 +27,7 @@ public class OldManNewer : MonoBehaviour
             {
                 gameObject.transform.position = startPos.transform.position;
                 scareClass.FindAndTurnOff(gameObject);
-                timer = 0f;
+                timer = 3f;
 
 
             }

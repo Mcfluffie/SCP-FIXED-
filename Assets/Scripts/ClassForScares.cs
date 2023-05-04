@@ -56,7 +56,7 @@ public class ClassForScares : MonoBehaviour
        if (numScaresOn <= objectScaresArray.Length - 1)
         {
             // time between the scares happening
-            timeBetweenScares = UnityEngine.Random.Range(8f, 20f / (numScaresOn + 1f));
+            timeBetweenScares = UnityEngine.Random.Range(8f, 20f);
 
             // which scare is selected
             int scareNumber = UnityEngine.Random.Range(0, objectScaresArray.Length - 1);
@@ -64,12 +64,13 @@ public class ClassForScares : MonoBehaviour
             if (objectScaresArray[scareNumber].objectInGame.activeSelf)
             {
 
-                SortingIfUnavailable(scareNumber);
+                SortingIfUnavailable();
 
 
             }
             else
             {
+                // activates the scare and add the sanity to the sanity meter
 
                 pickScare = objectScaresArray[scareNumber].objectInGame;
                 pickScare.SetActive(true);
@@ -78,27 +79,22 @@ public class ClassForScares : MonoBehaviour
 
             }
 
-            if (numScaresOn < 2f)
-            {
-                numScaresOn++;
-                StartCoroutine(timerForScare());
-
-
-            }
+          
         }
 
     }
 
 
-    void SortingIfUnavailable(int scareNum)
+    void SortingIfUnavailable()
     {
-
+        int scareNum;
         for (int i = 0; i < objectScaresArray.Length - 1; i++)
         {
 
             if (!objectScaresArray[i].objectInGame.activeSelf && objectScaresArray[i].isAvailable)
             {
 
+                // activates the scare and add the sanity to the sanity meter and also makes sure the scare num equals what was found true in the if statement
                 scareNum = i;
                 pickScare = objectScaresArray[scareNum].objectInGame;
                 pickScare.SetActive(true);
@@ -109,7 +105,7 @@ public class ClassForScares : MonoBehaviour
     }
 
     
-    // attach this to every script that is a scare
+    // activate this to every script that is a scare
     public void FindAndTurnOff(GameObject thingToFind)
     {
         TurnOffItem(thingToFind);
@@ -144,24 +140,19 @@ public class ClassForScares : MonoBehaviour
 
             timer += Time.deltaTime;
             yield return null;
+            Debug.Log("timer end");
 
         }
 
-        if (numScaresOn > 2f)
+        if (numScaresOn < 2f)
         {
             Selector();
-            StartCoroutine(timerForScare());
-            Debug.Log("the coroutine restarts");
+            Debug.Log("going as normal");
         }
-        else
-        {
+        StartCoroutine(timerForScare());
 
-            Selector();
 
-        }
 
-        Debug.Log("timer set to 0");
-        
 
         // goes to selector next
 
