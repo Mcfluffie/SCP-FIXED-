@@ -8,8 +8,8 @@ public class GhostHand : MonoBehaviour
     public GameObject wheel2;
     public GameObject Ghosthand;
     public GameObject ghostwheel;
-   // public Animator wheel;
-  //  public Steeringwheel steer;
+    // public Animator wheel;
+    // public Steeringwheel steer;
 
     private bool ghostHandActive = false;
 
