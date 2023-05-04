@@ -32,7 +32,7 @@ public class OldManNewer : MonoBehaviour
             {
                 gameObject.transform.position = startPos.transform.position;
                 scareClass.FindAndTurnOff(gameObject);
-                timer = 2.7f;
+                timer = 2.5f;
 
 
             }
@@ -48,7 +48,7 @@ public class OldManNewer : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             Debug.Log("ghost collide");
-            scareClass.SanityChange(1);
+            scareClass.SanityChange(0);
         }
     }
 }
