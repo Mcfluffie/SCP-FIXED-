@@ -8,6 +8,8 @@ public class BanshiKil : MonoBehaviour
     public float maxDistance = 10f;
     public GameObject objectToDisable;
 
+    public ClassForScares scareClass;
+
     void Update()
     {
         // Cast a ray from the camera forward
@@ -17,7 +19,7 @@ public class BanshiKil : MonoBehaviour
             // If the ray hits the object to be destroyed, disable it
             if (hit.collider.gameObject == objectToDisable)
             {
-                objectToDisable.SetActive(false);
+                scareClass.FindAndTurnOff(gameObject);
             }
         }
     }

@@ -26,8 +26,8 @@ public class ClassForScares : MonoBehaviour
     public GameObject foundScare;
 
 
-    public Fowardtest isSteering;
-
+    public Steeringwheel isSteering;
+    private bool coroutineOn = false;
 
     // if i were to start over I would
     // make it so the script cycles through the array to find a scare that is available
@@ -37,7 +37,7 @@ public class ClassForScares : MonoBehaviour
     {
         
 
-        if (vignetteChange.sanityLevel >= 0.6f)
+        if (vignetteChange.sanityLevel >= 0.4f)
         {
             objectScaresArray[2].isAvailable = true;
         }
@@ -53,59 +53,66 @@ public class ClassForScares : MonoBehaviour
 
     public void Selector()
     {
-       if (numScaresOn <= objectScaresArray.Length - numberOfScaresThatArentNull)
+        if (numScaresOn <= objectScaresArray.Length - 1)
         {
             // time between the scares happening
-            timeBetweenScares = UnityEngine.Random.Range(8f, 20f / (numScaresOn + 1f));
+            timeBetweenScares = UnityEngine.Random.Range(6f, 15f - numScaresOn);
 
             // which scare is selected
-            int scareNumber = UnityEngine.Random.Range(0, objectScaresArray.Length - 1);
 
-            if (objectScaresArray[scareNumber].objectInGame.activeSelf)
+            int scareNumber = UnityEngine.Random.Range(0, objectScaresArray.Length);
+            Debug.Log(scareNumber);
+            if (objectScaresArray[scareNumber].objectInGame.activeSelf || !objectScaresArray[scareNumber].isAvailable)
             {
+                // goes through the much less random method to garantee a new scare
 
-                SortingIfAvailable(scareNumber);
-
+                SortingIfUnavailable();
+                Debug.Log("go to storting algorythm");
 
             }
+            
             else
             {
+                // activates the scare and add the sanity to the sanity meter
 
                 pickScare = objectScaresArray[scareNumber].objectInGame;
                 pickScare.SetActive(true);
-
-            }
-            SanityChange(scareNumber);
-            StartCoroutine(timerForScare());
-
-            if (numScaresOn < 2f)
-            {
+                SanityChange(scareNumber);
                 numScaresOn++;
+                Debug.Log("do the action");
 
             }
+
+          
         }
 
     }
 
 
-    void SortingIfAvailable(int scareNum)
+    void SortingIfUnavailable()
     {
-
-        for (int i = 0; i < objectScaresArray.Length - 1f; i++)
+        int scareNum;
+        for (int i = 0; i < objectScaresArray.Length - 1; i++)
         {
 
             if (!objectScaresArray[i].objectInGame.activeSelf && objectScaresArray[i].isAvailable)
             {
 
+                // activates the scare and add the sanity to the sanity meter and also makes sure the scare num equals what was found true in the if statement
                 scareNum = i;
                 pickScare = objectScaresArray[scareNum].objectInGame;
                 pickScare.SetActive(true);
+                SanityChange(scareNum);
+                numScaresOn++;
+                // stops the loop
+                i = objectScaresArray.Length + 1;
+
             }
         }
     }
 
     
-    // attach this to every script that is a scare
+    // activate this to every script that is a scare
     public void FindAndTurnOff(GameObject thingToFind)
     {
         TurnOffItem(thingToFind);
@@ -117,12 +124,12 @@ public class ClassForScares : MonoBehaviour
         for (int f = 0; f < objectScaresArray.Length - 1; f++)
         {
 
-            if (objectScaresArray[f].objectInGame = thingToFind)
+            if (objectScaresArray[f].objectInGame == thingToFind)
             {
                 Debug.Log("successful removal of scare");
                 foundScare = objectScaresArray[1].objectInGame;
                 foundScare.SetActive(false);
-                f = objectScaresArray.Length - 1;
+                
                 numScaresOn--;
             }
 
@@ -143,20 +150,15 @@ public class ClassForScares : MonoBehaviour
 
         }
 
-        if (numScaresOn > 2f)
+        if (numScaresOn < 3f)
         {
-            StartCoroutine(timerForScare());
-            Debug.Log("the coroutine restarts");
-        }
-        else
-        {
-
             Selector();
-
+            Debug.Log("going as normal");
         }
+        StartCoroutine(timerForScare());
 
-        Debug.Log("timer set to 0");
-        
+
+
 
         // goes to selector next
 
@@ -190,12 +192,15 @@ public class ClassForScares : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (isSteering)
+        if (isSteering.firstInteraction && !coroutineOn)
         {
             StartCoroutine(timerForScare());
+            coroutineOn = true;
+            Debug.Log("it turned on");
+
         }
 
-       
+
 
         ActiveScares();
 

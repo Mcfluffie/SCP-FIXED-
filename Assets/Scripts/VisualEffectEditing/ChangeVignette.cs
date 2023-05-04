@@ -64,10 +64,16 @@ public class ChangeVignette : MonoBehaviour
         targetDevice.TryGetFeatureValue(CommonUsages.primaryButton, out bool primaryButtonValue);
 
         
+    
+        if (sanityLevel > 0.65f)
+        {
+            sanityLevel = 0.65f;
+        }
 
-        
         interpolatedSanity += Mathf.Sign(sanityLevel - interpolatedSanity) * Mathf.Clamp(Time.deltaTime / vignetteLerpTime, 0f, Mathf.Abs(interpolatedSanity - sanityLevel));
-        
+
+
+
 
         if (previousLevel != interpolatedSanity)
         {
