@@ -37,7 +37,7 @@ public class ClassForScares : MonoBehaviour
     {
         
 
-        if (vignetteChange.sanityLevel >= 0.6f)
+        if (vignetteChange.sanityLevel >= 0.4f)
         {
             objectScaresArray[2].isAvailable = true;
         }
@@ -56,26 +56,27 @@ public class ClassForScares : MonoBehaviour
        if (numScaresOn <= objectScaresArray.Length - 1)
         {
             // time between the scares happening
-            timeBetweenScares = UnityEngine.Random.Range(8f, 20f);
+            timeBetweenScares = UnityEngine.Random.Range(6f, 15f - numScaresOn);
 
             // which scare is selected
-            int scareNumber = UnityEngine.Random.Range(0, objectScaresArray.Length - 1);
+            int scareNumber = UnityEngine.Random.Range(0, objectScaresArray.Length);
             Debug.Log(scareNumber);
-            if (objectScaresArray[scareNumber].objectInGame.activeSelf)
+            if (objectScaresArray[scareNumber].objectInGame.activeSelf || !objectScaresArray[scareNumber].isAvailable)
             {
+                // goes through the much less random method to garantee a new scare
 
                 SortingIfUnavailable();
 
 
             }
-            else
+            else if (objectScaresArray[scareNumber].isAvailable)
             {
                 // activates the scare and add the sanity to the sanity meter
 
                 pickScare = objectScaresArray[scareNumber].objectInGame;
                 pickScare.SetActive(true);
                 SanityChange(scareNumber);
-
+                numScaresOn++;
 
             }
 
@@ -99,6 +100,7 @@ public class ClassForScares : MonoBehaviour
                 pickScare = objectScaresArray[scareNum].objectInGame;
                 pickScare.SetActive(true);
                 SanityChange(scareNum);
+                numScaresOn++;
 
             }
         }
