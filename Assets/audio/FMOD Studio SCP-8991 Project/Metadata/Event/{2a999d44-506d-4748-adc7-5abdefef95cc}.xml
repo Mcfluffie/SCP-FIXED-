@@ -196,7 +196,7 @@
 			<value>50</value>
 		</property>
 		<property name="gain">
-			<value>21</value>
+			<value>2</value>
 		</property>
 	</object>
 	<object class="ThreeEQEffect" id="{01533395-1e3a-42e9-92ac-56140ae904fa}">

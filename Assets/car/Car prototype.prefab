@@ -1932,8 +1932,6 @@ GameObject:
   - component: {fileID: 6708022149157892120}
   - component: {fileID: 6708022149157892123}
   - component: {fileID: 6708022149157892126}
-  - component: {fileID: 6708022149157892127}
-  - component: {fileID: 6708022149157892124}
   - component: {fileID: 2875040417805905637}
   m_Layer: 0
   m_Name: pos button
@@ -2055,55 +2053,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
---- !u!114 &6708022149157892127
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6708022149157892116}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0866610e2abc3b4a9d42232f2411848, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  InvertradioDirection: 1
---- !u!114 &6708022149157892124
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6708022149157892116}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b58ba90390f101644966e75740e53451, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enableStationToggleClips: 1
-  toggleEvents: []
-  stations:
-  - name: 
-    possessed: 0
-    clipQueue:
-    - Guid:
-        Data1: 1031606946
-        Data2: 1328408375
-        Data3: 1552535982
-        Data4: 318982967
-      Path: event:/radio/channel_1
-    debugPlaybackTimes: 0
-  - name: 
-    possessed: 0
-    clipQueue:
-    - Guid:
-        Data1: 631724299
-        Data2: 1110300999
-        Data3: -671110747
-        Data4: 271652293
-      Path: event:/radio/channel_2
-    debugPlaybackTimes: 0
-  startStation: 0
 --- !u!114 &2875040417805905637
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2123,7 +2072,7 @@ MonoBehaviour:
       Data2: 1328408375
       Data3: 1552535982
       Data4: 318982967
-    Path: event:/radio/channel_1
+    Path: event:/radio/stations/station_1
   Event: 
   PlayEvent: 3
   StopEvent: 0
@@ -2185,7 +2134,7 @@ MonoBehaviour:
       Data2: 1269263899
       Data3: 1392036285
       Data4: -785020452
-    Path: event:/car/car_winder/car_winder_up
+    Path: event:/car/window/car_winder
   Event: 
   PlayEvent: 0
   StopEvent: 0
@@ -2408,7 +2357,6 @@ MonoBehaviour:
   ghosthand: {fileID: 8380183229288968728}
   anime: {fileID: 6708022149813130179}
   delay: 2
-  wheel: {fileID: 0}
   ghosthandAnim: {fileID: 2875040419193864094}
 --- !u!1 &6708022149272834175
 GameObject:
@@ -3052,10 +3000,9 @@ MonoBehaviour:
   speed: 55
   maxSteeringAngle: 0.5
   rotationSpeed: 5
-  forceAmount: 4
-  forceMode: 0
   steeringWheel: {fileID: 6708022148769828463}
   maxMagnitude: 2
+  carWheel: {fileID: 0}
 --- !u!65 &6708022149612559440
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3195,6 +3142,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   steeringsesns: 0.007
+  firstInteraction: 0
 --- !u!95 &2875040419286825553
 Animator:
   serializedVersion: 5
@@ -4651,6 +4599,38 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!1 &8380183229288968728
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 6028725851047536606, guid: ce06f5cc42ac3f64b84722370b7a04d0, type: 3}
+  m_PrefabInstance: {fileID: 2875040419808499142}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8380183229288968730}
+  - component: {fileID: 2875040419193864094}
+  m_Layer: 0
+  m_Name: 'GhostHand  (Missing Prefab with guid: ce06f5cc42ac3f64b84722370b7a04d0)'
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8380183229288968730
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 1223306817611763392, guid: ce06f5cc42ac3f64b84722370b7a04d0, type: 3}
+  m_PrefabInstance: {fileID: 2875040419808499142}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8380183229288968728}
+  m_LocalRotation: {x: 0.03163627, y: 0.051875487, z: -0.7743954, w: 0.6297776}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 6708022150436355926}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 6.903, y: 0.943, z: -101.704}
 --- !u!1001 &2875040418730321643
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5198,11 +5178,6 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 2875040419193864094}
   m_SourcePrefab: {fileID: 100100000, guid: ce06f5cc42ac3f64b84722370b7a04d0, type: 3}
---- !u!1 &8380183229288968728 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6028725851047536606, guid: ce06f5cc42ac3f64b84722370b7a04d0, type: 3}
-  m_PrefabInstance: {fileID: 2875040419808499142}
-  m_PrefabAsset: {fileID: 0}
 --- !u!95 &2875040419193864094
 Animator:
   serializedVersion: 5
@@ -5223,11 +5198,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
---- !u!4 &8380183229288968730 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 6028725851047536604, guid: ce06f5cc42ac3f64b84722370b7a04d0, type: 3}
-  m_PrefabInstance: {fileID: 2875040419808499142}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2875040419812432051
 PrefabInstance:
   m_ObjectHideFlags: 0

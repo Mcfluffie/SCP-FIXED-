@@ -11,6 +11,7 @@ TagManager:
   - LeftTrigger
   - RightTrigger
   - death
+  - Object
   layers:
   - Default
   - TransparentFX
