@@ -38,7 +38,7 @@ public class Windowc : MonoBehaviour
     {
         if (other.CompareTag("RadioTrigger"))
         {
-            anime.Play("windowidle");
+            anime.Play("window down idle");
         }
     }
 

@@ -7,13 +7,9 @@ public class Steeringwheel : XRBaseInteractable
     [SerializeField] private Transform wheelTransform;
 
     public UnityEvent<float> OnWheelRotated;
-
     private float currentAngle = 0.0f;
     public float steeringsesns = 0.05f;
-
     public bool firstInteraction = false;
-
-
 
     public void Update()
     {
@@ -48,11 +44,9 @@ public class Steeringwheel : XRBaseInteractable
     {
         // Convert that direction to an angle, then rotation
         float totalAngle = FindWheelAngle();
-
         // Apply difference in angle to wheel
         float angleDifference = currentAngle - totalAngle;
         wheelTransform.Rotate(transform.forward, -angleDifference, Space.World);
-
         // Store angle for next process
         currentAngle = totalAngle;
         OnWheelRotated?.Invoke(angleDifference);

@@ -7,8 +7,9 @@ public class GhostHand : MonoBehaviour
     public GameObject wheel1;
     public GameObject wheel2;
     public GameObject Ghosthand;
-   // public Animator wheel;
-  //  public Steeringwheel steer;
+    public GameObject ghostwheel;
+    // public Animator wheel;
+    // public Steeringwheel steer;
 
     private bool ghostHandActive = false;
 
@@ -24,6 +25,7 @@ public class GhostHand : MonoBehaviour
        // steer.enabled = false; // disable the Steeringwheel script
         wheel1.SetActive(false);
         wheel2.SetActive(false);
+        ghostwheel.SetActive(true);
     }
 
     private void OnDisable()
@@ -32,6 +34,7 @@ public class GhostHand : MonoBehaviour
        // wheel.Play("Wheeldle");
         wheel1.SetActive(true);
         wheel2.SetActive(true);
+        ghostwheel.SetActive(false);
       //  steer.enabled = true; // enable the Steeringwheel script
     }
 
