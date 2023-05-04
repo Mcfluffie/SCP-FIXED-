@@ -26,7 +26,7 @@ public class ClassForScares : MonoBehaviour
     public GameObject foundScare;
 
 
-    public Fowardtest isSteering;
+    public Steeringwheel isSteering;
     private bool coroutineOn = false;
 
     // if i were to start over I would
@@ -59,8 +59,8 @@ public class ClassForScares : MonoBehaviour
             timeBetweenScares = UnityEngine.Random.Range(6f, 15f - numScaresOn);
 
             // which scare is selected
-            //UnityEngine.Random.Range(0, objectScaresArray.Length)
-            int scareNumber = 2;
+
+            int scareNumber = UnityEngine.Random.Range(0, objectScaresArray.Length);
             Debug.Log(scareNumber);
             if (objectScaresArray[scareNumber].objectInGame.activeSelf || !objectScaresArray[scareNumber].isAvailable)
             {
@@ -192,7 +192,7 @@ public class ClassForScares : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (isSteering && !coroutineOn)
+        if (isSteering.firstInteraction && !coroutineOn)
         {
             StartCoroutine(timerForScare());
             coroutineOn = true;

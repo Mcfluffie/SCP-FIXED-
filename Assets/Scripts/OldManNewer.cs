@@ -14,11 +14,16 @@ public class OldManNewer : MonoBehaviour
 
     public ClassForScares scareClass;
 
+
+
+
+
     // Update is called once per frame
     void Update()
     {
         if (player.transform.position != gameObject.transform.position)
         {
+            
             Vector3 direction = Vector3.Normalize(player.transform.position - transform.position);
             transform.Translate(direction * speed * Time.deltaTime);
 
@@ -27,7 +32,7 @@ public class OldManNewer : MonoBehaviour
             {
                 gameObject.transform.position = startPos.transform.position;
                 scareClass.FindAndTurnOff(gameObject);
-                timer = 3f;
+                timer = 2.7f;
 
 
             }
@@ -37,5 +42,13 @@ public class OldManNewer : MonoBehaviour
         
 
 
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            Debug.Log("ghost collide");
+            scareClass.SanityChange(1);
+        }
     }
 }
