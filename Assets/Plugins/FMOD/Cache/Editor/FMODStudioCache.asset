@@ -15,7 +15,7 @@ MonoBehaviour:
   Path: Assets/audio/FMOD Studio SCP-8991 Project/Build/Desktop/ambience.bank
   Name: ambience
   StudioPath: bank:/ambience
-  lastModified: 638180357949849740
+  lastModified: 638188063289177900
   FileSizes:
   - Name: Desktop
     Value: 5707296
@@ -318,7 +318,7 @@ MonoBehaviour:
   Path: Assets/audio/FMOD Studio SCP-8991 Project/Build/Desktop/car.bank
   Name: car
   StudioPath: bank:/car
-  lastModified: 638180357951665144
+  lastModified: 638188063289207819
   FileSizes:
   - Name: Desktop
     Value: 1799648
@@ -500,7 +500,7 @@ MonoBehaviour:
   Path: Assets/audio/FMOD Studio SCP-8991 Project/Build/Desktop/ghosts.bank
   Name: ghosts
   StudioPath: bank:/ghosts
-  lastModified: 638180357951575120
+  lastModified: 638188063289257673
   FileSizes:
   - Name: Desktop
     Value: 435616
@@ -524,8 +524,8 @@ MonoBehaviour:
   - {fileID: -69100198850974563}
   - {fileID: -7745300543325591204}
   - {fileID: -7759574343454031386}
-  - {fileID: 5993789220357130677}
   - {fileID: 1830976940169757525}
+  - {fileID: 8920674754483262989}
   EditorEvents:
   - {fileID: 3562169629527867712}
   - {fileID: -2069126488212505685}
@@ -559,7 +559,7 @@ MonoBehaviour:
   - {fileID: -7745300543325591204}
   StringsBanks:
   - {fileID: 1487757120082299974}
-  cacheTime: 638180357993807838
+  cacheTime: 638188063289257673
   cacheVersion: 131601
 --- !u!114 &725627934643616296
 MonoBehaviour:
@@ -790,26 +790,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2500
---- !u!114 &5993789220357130677
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/audio/FMOD Studio SCP-8991 Project/Build/Desktop/Master.bank
-  Name: Master
-  StudioPath: bank:/Master
-  lastModified: 638186412189759634
-  FileSizes:
-  - Name: Desktop
-    Value: 185432
-  Exists: 1
 --- !u!114 &5798668414443678607
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -849,7 +829,7 @@ MonoBehaviour:
     Data3: -1814395459
     Data4: -927215568
   Banks:
-  - {fileID: 5993789220357130677}
+  - {fileID: 8920674754483262989}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
@@ -992,3 +972,23 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 410160
+--- !u!114 &8920674754483262989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/road.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/audio/FMOD Studio SCP-8991 Project/Build/Desktop/road.bank
+  Name: road
+  StudioPath: bank:/road
+  lastModified: 638170003694208516
+  FileSizes:
+  - Name: Desktop
+    Value: 873856
+  Exists: 1

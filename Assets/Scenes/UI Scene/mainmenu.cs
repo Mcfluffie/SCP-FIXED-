@@ -8,7 +8,8 @@ public class mainmenu : MonoBehaviour
     
     public void StartGame()
     {
-        SceneManager.LoadScene("SCPLvlOne"); 
+        //SceneManager.LoadScene("SCPLvlOne");
+        SceneManager.LoadScene("SampleScene");
     }
 
     public void QuitGame()

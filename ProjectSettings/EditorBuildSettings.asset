@@ -8,7 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Mitch/HubWorld.unity
     guid: 6e208b21b77c70c44be0d831544a2cb5
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SCPLvlOne.unity
     guid: e1545174ee9f7d64ab21006135345d5a
   - enabled: 1

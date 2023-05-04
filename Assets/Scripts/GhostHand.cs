@@ -40,6 +40,6 @@ public class GhostHand : MonoBehaviour
 
     public bool CanGrabWheel()
     {
-        return !ghostHandActive;
+       return !ghostHandActive;
     }
 }
