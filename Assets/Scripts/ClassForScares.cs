@@ -27,7 +27,7 @@ public class ClassForScares : MonoBehaviour
 
 
     public Fowardtest isSteering;
-    private bool coroutineOn;
+    private bool coroutineOn = false;
 
     // if i were to start over I would
     // make it so the script cycles through the array to find a scare that is available
@@ -53,23 +53,25 @@ public class ClassForScares : MonoBehaviour
 
     public void Selector()
     {
-       if (numScaresOn <= objectScaresArray.Length - 1)
+        if (numScaresOn <= objectScaresArray.Length - 1)
         {
             // time between the scares happening
             timeBetweenScares = UnityEngine.Random.Range(6f, 15f - numScaresOn);
 
             // which scare is selected
-            int scareNumber = UnityEngine.Random.Range(0, objectScaresArray.Length);
+            //UnityEngine.Random.Range(0, objectScaresArray.Length)
+            int scareNumber = 2;
             Debug.Log(scareNumber);
             if (objectScaresArray[scareNumber].objectInGame.activeSelf || !objectScaresArray[scareNumber].isAvailable)
             {
                 // goes through the much less random method to garantee a new scare
 
                 SortingIfUnavailable();
-
+                Debug.Log("go to storting algorythm");
 
             }
-            else if (objectScaresArray[scareNumber].isAvailable)
+            
+            else
             {
                 // activates the scare and add the sanity to the sanity meter
 
@@ -77,6 +79,7 @@ public class ClassForScares : MonoBehaviour
                 pickScare.SetActive(true);
                 SanityChange(scareNumber);
                 numScaresOn++;
+                Debug.Log("do the action");
 
             }
 
@@ -101,6 +104,8 @@ public class ClassForScares : MonoBehaviour
                 pickScare.SetActive(true);
                 SanityChange(scareNum);
                 numScaresOn++;
+                // stops the loop
+                i = objectScaresArray.Length + 1;
 
             }
         }
@@ -142,11 +147,10 @@ public class ClassForScares : MonoBehaviour
 
             timer += Time.deltaTime;
             yield return null;
-            Debug.Log("timer end");
 
         }
 
-        if (numScaresOn < 2f)
+        if (numScaresOn < 3f)
         {
             Selector();
             Debug.Log("going as normal");
@@ -192,9 +196,11 @@ public class ClassForScares : MonoBehaviour
         {
             StartCoroutine(timerForScare());
             coroutineOn = true;
+            Debug.Log("it turned on");
+
         }
 
-       
+
 
         ActiveScares();
 
