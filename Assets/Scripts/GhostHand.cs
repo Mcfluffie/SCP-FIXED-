@@ -11,12 +11,11 @@ public class GhostHand : MonoBehaviour
     // public Animator wheel;
     // public Steeringwheel steer;
 
+    public ClassForScares scareClass;
+
     private bool ghostHandActive = false;
 
-    void Start()
-    {
 
-    }
 
     private void OnEnable()
     {
@@ -30,12 +29,17 @@ public class GhostHand : MonoBehaviour
 
     private void OnDisable()
     {
+
+        scareClass.FindAndTurnOff(gameObject);
+
         ghostHandActive = false;
        // wheel.Play("Wheeldle");
+
         wheel1.SetActive(true);
         wheel2.SetActive(true);
         ghostwheel.SetActive(false);
       //  steer.enabled = true; // enable the Steeringwheel script
+
     }
 
     public bool CanGrabWheel()
