@@ -19,6 +19,7 @@ public class BanshiKil : MonoBehaviour
             // If the ray hits the object to be destroyed, disable it
             if (hit.collider.gameObject == objectToDisable)
             {
+                Debug.Log("HIT");
                 scareClass.FindAndTurnOff(gameObject);
             }
         }

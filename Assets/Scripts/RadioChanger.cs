@@ -44,7 +44,7 @@ public class RadioChanger : MonoBehaviour
             myEventEmittertostop6.Stop();
 
             // Randomly choose whether to play the HorrorRadio or the initial station
-            bool playHorrorRadio = Random.value < 0.2f;
+            bool playHorrorRadio = Random.value < 0.05f;
             if (playHorrorRadio)
             {
                 HorrorRadio.Play();

@@ -56,7 +56,7 @@ public class ClassForScares : MonoBehaviour
         if (numScaresOn <= objectScaresArray.Length - 1)
         {
             // time between the scares happening
-            timeBetweenScares = UnityEngine.Random.Range(6f, 15f - numScaresOn);
+            timeBetweenScares = UnityEngine.Random.Range(15f, 25f - numScaresOn);
 
             // which scare is selected
 
@@ -127,7 +127,7 @@ public class ClassForScares : MonoBehaviour
             if (objectScaresArray[f].objectInGame == thingToFind)
             {
                 Debug.Log("successful removal of scare");
-                foundScare = objectScaresArray[1].objectInGame;
+                foundScare = objectScaresArray[f].objectInGame;
                 foundScare.SetActive(false);
                 
                 numScaresOn--;

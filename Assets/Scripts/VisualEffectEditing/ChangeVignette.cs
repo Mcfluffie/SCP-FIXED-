@@ -54,7 +54,7 @@ public class ChangeVignette : MonoBehaviour
         InputDevices.GetDevicesWithCharacteristics(rightControllerCharacteristics, devices);
         foreach (var item in devices)
         {
-            Debug.Log(item.name + item.characteristics);
+           // Debug.Log(item.name + item.characteristics);
         }
         if (devices.Count > 0)
         {

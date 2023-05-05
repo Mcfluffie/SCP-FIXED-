@@ -9,7 +9,7 @@ public class NLose : MonoBehaviour
 
     public  void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("death"))
+        if (other.CompareTag("Player"))
         {
             SceneManager.LoadScene(levelName);
         }
