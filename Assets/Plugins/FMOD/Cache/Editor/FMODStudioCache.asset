@@ -15,7 +15,7 @@ MonoBehaviour:
   Path: Assets/audio/FMOD Studio SCP-8991 Project/Build/Desktop/ambience.bank
   Name: ambience
   StudioPath: bank:/ambience
-  lastModified: 638180357949849740
+  lastModified: 638188770800536039
   FileSizes:
   - Name: Desktop
     Value: 5707296
@@ -62,7 +62,7 @@ MonoBehaviour:
   Path: Assets/audio/FMOD Studio SCP-8991 Project/Build/Desktop/radio.bank
   Name: radio
   StudioPath: bank:/radio
-  lastModified: 638180357993807838
+  lastModified: 638188770803158430
   FileSizes:
   - Name: Desktop
     Value: 54637312
@@ -82,7 +82,7 @@ MonoBehaviour:
   Path: Assets/audio/FMOD Studio SCP-8991 Project/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638170003691703595
+  lastModified: 638188770800375892
   FileSizes:
   - Name: Desktop
     Value: 185432
@@ -114,6 +114,26 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 556052
+--- !u!114 &-7026915710558673230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/road.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/audio/FMOD Studio SCP-8991 Project/Build/Desktop/road.bank
+  Name: road
+  StudioPath: bank:/road
+  lastModified: 638188770803238502
+  FileSizes:
+  - Name: Desktop
+    Value: 873856
+  Exists: 1
 --- !u!114 &-6964617320518245741
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -318,7 +338,7 @@ MonoBehaviour:
   Path: Assets/audio/FMOD Studio SCP-8991 Project/Build/Desktop/car.bank
   Name: car
   StudioPath: bank:/car
-  lastModified: 638180357951665144
+  lastModified: 638188770800586082
   FileSizes:
   - Name: Desktop
     Value: 1799648
@@ -500,7 +520,7 @@ MonoBehaviour:
   Path: Assets/audio/FMOD Studio SCP-8991 Project/Build/Desktop/ghosts.bank
   Name: ghosts
   StudioPath: bank:/ghosts
-  lastModified: 638180357951575120
+  lastModified: 638188770800616112
   FileSizes:
   - Name: Desktop
     Value: 435616
@@ -524,8 +544,8 @@ MonoBehaviour:
   - {fileID: -69100198850974563}
   - {fileID: -7745300543325591204}
   - {fileID: -7759574343454031386}
-  - {fileID: 5993789220357130677}
   - {fileID: 1830976940169757525}
+  - {fileID: -7026915710558673230}
   EditorEvents:
   - {fileID: 3562169629527867712}
   - {fileID: -2069126488212505685}
@@ -559,7 +579,7 @@ MonoBehaviour:
   - {fileID: -7745300543325591204}
   StringsBanks:
   - {fileID: 1487757120082299974}
-  cacheTime: 638180357993807838
+  cacheTime: 638188770803258520
   cacheVersion: 131601
 --- !u!114 &725627934643616296
 MonoBehaviour:
@@ -657,7 +677,7 @@ MonoBehaviour:
   Path: Assets/audio/FMOD Studio SCP-8991 Project/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638180357951515281
+  lastModified: 638188770800405921
   FileSizes:
   - Name: Desktop
     Value: 2140
@@ -704,7 +724,7 @@ MonoBehaviour:
   Path: Assets/audio/FMOD Studio SCP-8991 Project/Build/Desktop/ui.bank
   Name: ui
   StudioPath: bank:/ui
-  lastModified: 638180357953260619
+  lastModified: 638188770803258520
   FileSizes:
   - Name: Desktop
     Value: 46496
@@ -790,26 +810,6 @@ MonoBehaviour:
   MinDistance: 1
   MaxDistance: 20
   Length: 2500
---- !u!114 &5993789220357130677
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
-  m_Name: bank:/Master.bank
-  m_EditorClassIdentifier: 
-  Path: Assets/audio/FMOD Studio SCP-8991 Project/Build/Desktop/Master.bank
-  Name: Master
-  StudioPath: bank:/Master
-  lastModified: 638186412189759634
-  FileSizes:
-  - Name: Desktop
-    Value: 185432
-  Exists: 1
 --- !u!114 &5798668414443678607
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -849,7 +849,7 @@ MonoBehaviour:
     Data3: -1814395459
     Data4: -927215568
   Banks:
-  - {fileID: 5993789220357130677}
+  - {fileID: -7026915710558673230}
   IsStream: 1
   Is3D: 1
   IsOneShot: 0
